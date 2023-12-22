@@ -3,7 +3,8 @@ project:
   output-dir: docs
 
 website:
-  title: "Blog"
+
+  title: "Gabriel Palucci Rosa"
   navbar:
     right:
       - about.qmd
@@ -11,11 +12,18 @@ website:
         href: https://github.com/
       - icon: twitter
         href: https://twitter.com
+        
+        
 format:
   html:
-    theme: theme.scss
+    theme: 
+      light: theme.scss
+      dark: theme-dark.scss
+      
 
 editor: visual
 comments:
   giscus:
     repo: GabrielPalucci/Blog
+    
+
