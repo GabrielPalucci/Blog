@@ -16,3 +16,6 @@ format:
     theme: theme.scss
 
 editor: visual
+comments:
+  giscus:
+    repo: GabrielPalucci/Blog
