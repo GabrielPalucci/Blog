@@ -10,16 +10,12 @@ website:
       - about.qmd
       - icon: github
         href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
         
         
 format:
   html:
     theme: 
       light: theme.scss
-      dark: theme-dark.scss
-      
 
 editor: visual
 comments:

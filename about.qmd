@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Sobre Gabriel Palucci Rosa"
 image: image.jpg
 comments: false
 about: 
@@ -12,3 +12,29 @@ about:
       text: Github
       href: https://github.com/GabrielPalucci
 ---
+
+```{=html}
+
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: justify;
+          
+        }
+    </style>
+<body>
+    <p><b>Olá, meu nome é Gabriel Palucci Rosa e <b>bem-vindo</b> ao blog.</b> Busco trazer conteúdos sobre ciência, discussões sobre ciência do solo e, principalmente, reflexões/histórias sobre alguns trabalhos de campo.
+    
+    Sou um entusiasta do sofware R, sendo que um dos motívos para criar o blog é manter o constante uso e aprender novas funções. Assim, busco  </p>
+</body>
+```
+
+------------------------------------------------------------------------
+
+| <b>Formação Acadêmica</b>
+
+-   Graduação em <mark>Geografia</mark> pela Universidade Federal de Uberlândia
+
+-   Mestrado em <mark>Geografia</mark> pela Universidade Federal de Uberlâdia
+
+-   Doutorando em <mark>Solo e Nutrição de plantas</mark> pela Unviversidade Federal de Viçosa

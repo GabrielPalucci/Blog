@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
     "objectID": "posts/CopyOfpost-with-code/index.html",
     "href": "posts/CopyOfpost-with-code/index.html",
     "title": "Post With Code",
@@ -14,17 +7,17 @@
     "text": "OIIEE"
   },
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Gabriel Palucci Rosa",
+    "section": "",
+    "text": "Olá, meu nome é Gabriel Palucci Rosa e bem-vindo ao blog. Busco trazer conteúdos sobre ciência, discussões sobre ciência do solo e, principalmente, reflexões/histórias sobre alguns trabalhos de campo.\n    Sou um entusiasta do sofware R, sendo que um dos motívos para criar o blog é manter o constante uso e aprender novas funções. Assim, busco  \n\nFormação Acadêmica\n\nGraduação em Geografia pela Universidade Federal de Uberlândia\nMestrado em Geografia pela Universidade Federal de Uberlâdia\nDoutorando em Solo e Nutrição de plantas pela Unviversidade Federal de Viçosa"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Blog",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nDec 22, 2023\n\n\nHarlow Palucci\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nDec 22, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nDec 19, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code."
+    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nDec 22, 2023\n\n\nHarlow Palucci\n\n\n\n\n\n\nNo matching items"
   }
 ]
