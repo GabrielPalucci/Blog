@@ -177,7 +177,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introdução" id="toc-introdução" class="nav-link active" data-scroll-target="#introdução">Introdução</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -185,6 +191,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
+<section id="introdução" class="level1">
+<h1>Introdução</h1>
 <p>Uns dos vários desafios na realizar uma pesquisa ciêntifica é planejar e executar, de forma eficiente, o processo de deliamento amostral.Um boa amamostragem permitira, realizar melhor discussão sobre dados coletados.</p>
 <p>Nessa aula iremos entender um pouco como funciona a realização de uma amostragem e os efeitos de realizar poucas repetições ou diferentes tamanho da coleta da amostra. Para isso utilizaremos uma base de dados de bolinhhas vermelhas e brancas.</p>
 <p>Importante lembrar o processo de amostragem necessita uma repetição para obter uma frequencia de % da ocorrência do do valor.</p>
@@ -245,7 +253,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code># A tibble: 1 × 3
   replicate num_red prop_red
       &lt;int&gt;   &lt;int&gt;    &lt;dbl&gt;
-1         1      22     0.44</code></pre>
+1         1      21     0.42</code></pre>
 </div>
 </div>
 <p>Nesse exemplo, pegamos nossa base de dados <em>virtual_shovel</em> criamos uma variaável Logical utilizando argumento cor é igual a vermelho, posteriormente realizamos summarize da soma dessa nova variável e finalizamos obtendo a proporção de vermelho na amostragem total que é 50.</p>
@@ -259,16 +267,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code># A tibble: 33 × 3
    replicate   red prop_red
        &lt;int&gt; &lt;int&gt;    &lt;dbl&gt;
- 1         1    27     0.54
- 2         2    16     0.32
- 3         3    12     0.24
- 4         4    19     0.38
- 5         5    17     0.34
- 6         6    10     0.2 
- 7         7    20     0.4 
- 8         8    21     0.42
+ 1         1    20     0.4 
+ 2         2    21     0.42
+ 3         3    14     0.28
+ 4         4    11     0.22
+ 5         5    15     0.3 
+ 6         6    20     0.4 
+ 7         7    19     0.38
+ 8         8    17     0.34
  9         9    16     0.32
-10        10    17     0.34
+10        10    23     0.46
 # ℹ 23 more rows</code></pre>
 </div>
 </div>
@@ -340,7 +348,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code># A tibble: 1 × 1
       sd
    &lt;dbl&gt;
-1 0.0671</code></pre>
+1 0.0655</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># n = 100</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>virtual_prop_red_100 <span class="sc">%&gt;%</span> </span>
@@ -349,7 +357,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code># A tibble: 1 × 1
       sd
    &lt;dbl&gt;
-1 0.0453</code></pre>
+1 0.0465</code></pre>
 </div>
 </div>
 <p>So as the sample size increases, the standard deviation of the proportion of red balls decreases. This type of standard deviation has another special name: standard error. Standard errors quantify the effect of sampling variation induced on our estimates. In other words, they quantify how much we can expect different proportions of a shovel’s balls that are red to vary from one sample to another sample to another sample, and so on. As a general rule, as sample size increases, the standard error decreases.</p>
@@ -416,16 +424,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code># A tibble: 33 × 3
    replicate   red prop_red
        &lt;int&gt; &lt;int&gt;    &lt;dbl&gt;
- 1         1    14     0.28
- 2         2    18     0.36
- 3         3    16     0.32
- 4         4    16     0.32
- 5         5    13     0.26
- 6         6    14     0.28
- 7         7    19     0.38
- 8         8    21     0.42
- 9         9    17     0.34
-10        10    15     0.3 
+ 1         1    16     0.32
+ 2         2    19     0.38
+ 3         3    21     0.42
+ 4         4    25     0.5 
+ 5         5    20     0.4 
+ 6         6    16     0.32
+ 7         7    21     0.42
+ 8         8    24     0.48
+ 9         9    15     0.3 
+10        10    20     0.4 
 # ℹ 23 more rows</code></pre>
 </div>
 </div>
@@ -497,7 +505,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code># A tibble: 1 × 1
       sd
    &lt;dbl&gt;
-1 0.0700</code></pre>
+1 0.0686</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># n = 100</span></span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>virtual_prop_red_100 <span class="sc">%&gt;%</span> </span>
@@ -506,13 +514,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code># A tibble: 1 × 1
       sd
    &lt;dbl&gt;
-1 0.0488</code></pre>
+1 0.0453</code></pre>
 </div>
 </div>
 <p>So as the sample size increases, the standard deviation of the proportion of red balls decreases. This type of standard deviation has another special name: standard error. Standard errors quantify the effect of sampling variation induced on our estimates. In other words, they quantify how much we can expect different proportions of a shovel’s balls that are red to vary from one sample to another sample to another sample, and so on. As a general rule, as sample size increases, the standard error decreases.</p>
 <p>Accuracy describes how “on target” our estimates are, whereas precision describes how “consistent” our estimates are</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

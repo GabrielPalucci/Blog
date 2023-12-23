@@ -7,6 +7,8 @@ image: "solo.jpg"
 toc: true
 ---
 
+# Introdução
+
 Uns dos vários desafios na realizar uma pesquisa ciêntifica é planejar e executar, de forma eficiente, o processo de deliamento amostral.Um boa amamostragem permitira, realizar melhor discussão sobre dados coletados.
 
 Nessa aula iremos entender um pouco como funciona a realização de uma amostragem e os efeitos de realizar poucas repetições ou diferentes tamanho da coleta da amostra. Para isso utilizaremos uma base de dados de bolinhhas vermelhas e brancas.
