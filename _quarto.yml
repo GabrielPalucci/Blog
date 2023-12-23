@@ -4,12 +4,16 @@ project:
 
 website:
 
-  title: "Blog"
+  title: "Gabriel Paucci Rosa"
   navbar:
+    logo: "solo.png"
+    background: primary
     right:
+      - conversa.qmd
       - about.qmd
       - icon: github
         href: https://github.com/
+        
         
         
         
