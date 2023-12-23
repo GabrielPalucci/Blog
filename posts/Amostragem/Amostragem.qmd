@@ -5,6 +5,8 @@ date: "2023-12-22"
 categories: [code, soil, analysis]
 image: "solo.jpg"
 toc: true
+toc-title: "Tabela de Conteúdo"
+lang: pt
 ---
 
 # Introdução
@@ -19,6 +21,10 @@ Assim, existe dois efeitos improtantes que serão descutidos nesse tópico
 
 -   Efeito na variação de dados nas amostragem
 -   EFeito do tamanho da amostragem na variação da amostra
+
+# Estudo de Caso
+
+## Utilizando Bolinhas para enteder processo de amostragem
 
 #/Pacotes
 

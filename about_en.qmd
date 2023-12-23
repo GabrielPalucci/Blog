@@ -1,0 +1,44 @@
+---
+title: "About"
+lang: pt
+image: image.jpg
+language: 
+    en:
+      title-block-published: "About"
+comments: false
+about: 
+  template: trestles
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile
+    - icon: github
+      text: Github
+      href: https://github.com/GabrielPalucci
+---
+
+```{=html}
+
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: justify;
+          
+        }
+    </style>
+<body>
+    <p><b>Hello my name is Gabriel Palucci Rosa and <b>welcome</b> to my blog.</b> I seek to bring content about science, discussion about soil science and, mainly, reflections/stories about some fieldwork.
+    
+    I am an R software enthusiast, and one of the reasons for creating the blog is to maintain constant use and learn new functions.  </p>
+</body>
+```
+
+------------------------------------------------------------------------
+
+| {{< fa book-open >}}<b> Formação Acadêmica</b>
+
+-   Degree in <mark>Geography</mark> from the Federal University of Uberlândia
+
+-   Master\`s degree in <mark>Geography</mark> from the Federal University of Uberlândia
+
+-   PhD student in <mark>Soil and Plant Nutrition</mark> at the Federal University of Viçosa

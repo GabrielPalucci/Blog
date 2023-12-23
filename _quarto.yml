@@ -3,20 +3,23 @@ project:
   output-dir: docs
 
 website:
-
-  title: "Gabriel Paucci Rosa"
+site-url: "https://gpalucci.com/"
+  title: "Gabriel Palucci Rosa"
   navbar:
     logo: "solo.png"
     background: primary
     right:
-      - conversa.qmd
-      - about.qmd
+      - text: About
+        menu:
+          - text: English
+            href: about_en.qmd
+          - text: Português
+            href: about_pt.qmd
+          - text: Talk
+            href: conversa.qmd
       - icon: github
         href: https://github.com/
-        
-        
-        
-        
+
 format:
   html:
     theme:
