@@ -4,7 +4,7 @@ project:
 
 website:
 
-  title: "Gabriel Palucci Rosa"
+  title: "Blog"
   navbar:
     right:
       - about.qmd
@@ -15,8 +15,7 @@ website:
         
 format:
   html:
-    theme: 
-      light: theme.scss
+    theme: theme.scss
 
 editor: visual
 comments:

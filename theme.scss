@@ -1,4 +1,29 @@
 /*-- scss:defaults --*/
 
+
 $primary: #965322;
+
+$font-family-base: "sans-serif" !default;
+$headings-font-family:"sans-serif" !default;
+
+
+/*-- scss:roles --*/
+
+div.quarto-post .listing-categories .listing-category {
+    background-color: #965322;
+    color: #fff;
+    border: none;
+    border-radius: 2rem;
+    text-transform: none;
+    font-size: .90em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.15em;
+    padding-bottom: 0.15em;
+    cursor: pointer;
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+
 
