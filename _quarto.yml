@@ -3,7 +3,6 @@ project:
   output-dir: docs
 
 website:
-site-url: "https://gpalucci.com/"
   title: "Gabriel Palucci Rosa"
   navbar:
     logo: "solo.png"
