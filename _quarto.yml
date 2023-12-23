@@ -15,7 +15,9 @@ website:
         
 format:
   html:
-    theme: theme.scss
+    theme:
+    - cosmo
+    - theme.scss
 
 editor: visual
 comments:

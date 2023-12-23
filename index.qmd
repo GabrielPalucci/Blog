@@ -1,5 +1,6 @@
 ---
 title: "Blog"
+image: solo.jpg
 listing:
   contents: posts
   sort: "date desc"
@@ -10,3 +11,5 @@ listing:
 page-layout: full
 title-block-banner: true
 ---
+
+/

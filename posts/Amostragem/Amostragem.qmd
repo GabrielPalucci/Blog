@@ -3,10 +3,152 @@ title: "Pensando sobre o processo de Amostragem"
 author: "Gabriel Palucci Rosa"
 date: "2023-12-22"
 categories: [code, soil, analysis]
-image: "amostra.jpg"
+image: "solo.jpg"
+toc: true
 ---
 
-# Amostragem 1
+Uns dos vários desafios na realizar uma pesquisa ciêntifica é planejar e executar, de forma eficiente, o processo de deliamento amostral.Um boa amamostragem permitira, realizar melhor discussão sobre dados coletados.
+
+Nessa aula iremos entender um pouco como funciona a realização de uma amostragem e os efeitos de realizar poucas repetições ou diferentes tamanho da coleta da amostra. Para isso utilizaremos uma base de dados de bolinhhas vermelhas e brancas.
+
+Importante lembrar o processo de amostragem necessita uma repetição para obter uma frequencia de % da ocorrência do do valor.
+
+Assim, existe dois efeitos improtantes que serão descutidos nesse tópico
+
+-   Efeito na variação de dados nas amostragem
+-   EFeito do tamanho da amostragem na variação da amostra
+
+#/Pacotes
+
+```{r, warning=FALSE}
+
+library(tidyverse)
+library(moderndive)
+
+```
+
+#/Dados
+
+Para isso vamos utilizar a base de dados bowl para demostrar o processo de amostragem
+
+```{r}
+
+bowl
+
+```
+
+```{r}
+
+virtual_shovel <- bowl %>% 
+     rep_sample_n(size = 50)
+
+
+```
+
+Nesse caso selecionamos 50 amostras de forma randômica do nossa base de dados.
+
+```{r, warning=FALSE}
+
+virtual_shovel %>%
+  mutate(is_red = color == "red") %>% 
+  summarize(num_red = sum(is_red)) %>% 
+  mutate(prop_red = num_red / 50)
+
+```
+
+Nesse exemplo, pegamos nossa base de dados *virtual_shovel* criamos uma variaável Logical utilizando argumento cor é igual a vermelho, posteriormente realizamos summarize da soma dessa nova variável e finalizamos obtendo a proporção de vermelho na amostragem total que é 50.
+
+```{r, warning=FALSE}
+
+bowl %>% 
+     rep_sample_n(size = 50, reps = 33) %>% 
+     group_by(replicate) %>% 
+     summarize(red = sum(color == "red")) %>% 
+     mutate(prop_red = red / 50)
+
+
+
+```
+
+Como podemos observar, realizamos uma amostragem de 50 bolinhas 33 vezes e obtemos a proporção de bolinhar vermelhas em cada amostragem.
+
+*O valor do tamanho da amostragem influência na proporção das bolinhas vermelhas?* *O valor do tamanho da amostragem influência desvio padrão das bolinhas vermelhas?*
+
+Desde modo iremos realizar amostragem 25,50, 100 bolinhas em 100 repetições e observar a resposta da porcentagem e sua frequencia
+
+```{r}
+
+
+virtual_samples_25 <- bowl %>% 
+  rep_sample_n(size = 25, reps = 100) %>% 
+  group_by(replicate) %>% 
+  summarize(red = sum(color == "red")) %>% 
+  mutate(prop_red = red / 25)
+
+  
+# 1.c) Plot distribution via a histogram
+ggplot(virtual_samples_25, aes(x = prop_red)) +
+  geom_histogram(binwidth = 0.05, boundary = 0.4, color = "white") +
+  labs(x = "Proportion of 25 balls that were red", title = "25") 
+
+
+# Segment 2: sample size = 50 ------------------------------
+# 2.a) Virtually use shovel 1000 times
+virtual_samples_50 <- bowl %>% 
+  rep_sample_n(size = 50, reps = 1000)
+
+# 2.b) Compute resulting 1000 replicates of proportion red
+virtual_prop_red_50 <- virtual_samples_50 %>% 
+  group_by(replicate) %>% 
+  summarize(red = sum(color == "red")) %>% 
+  mutate(prop_red = red / 50)
+
+# 2.c) Plot distribution via a histogram
+ggplot(virtual_prop_red_50, aes(x = prop_red)) +
+  geom_histogram(binwidth = 0.05, boundary = 0.4, color = "white") +
+  labs(x = "Proportion of 50 balls that were red", title = "50")  
+
+
+# Segment 3: sample size = 100 ------------------------------
+# 3.a) Virtually using shovel with 100 slots 1000 times
+virtual_samples_100 <- bowl %>% 
+  rep_sample_n(size = 100, reps = 1000)
+
+# 3.b) Compute resulting 1000 replicates of proportion red
+virtual_prop_red_100 <- virtual_samples_100 %>% 
+  group_by(replicate) %>% 
+  summarize(red = sum(color == "red")) %>% 
+  mutate(prop_red = red / 100)
+
+# 3.c) Plot distribution via a histogram
+ggplot(virtual_prop_red_100, aes(x = prop_red)) +
+  geom_histogram(binwidth = 0.05, boundary = 0.4, color = "white") +
+  labs(x = "Proportion of 100 balls that were red", title = "100") 
+
+
+
+```
+
+```{r}
+
+# n = 25
+
+# virtual_prop_red_25 %>% 
+#   summarize(sd = sd(prop_red))
+
+# n = 50
+virtual_prop_red_50 %>% 
+  summarize(sd = sd(prop_red))
+
+# n = 100
+virtual_prop_red_100 %>% 
+  summarize(sd = sd(prop_red))
+
+```
+
+So as the sample size increases, the standard deviation of the proportion of red balls decreases. This type of standard deviation has another special name: standard error. Standard errors quantify the effect of sampling variation induced on our estimates. In other words, they quantify how much we can expect different proportions of a shovel’s balls that are red to vary from one sample to another sample to another sample, and so on. As a general rule, as sample size increases, the standard error decreases.
+
+Accuracy describes how “on target” our estimates are, whereas precision describes how “consistent” our estimates are
 
 Uns dos vários desafios na realizar uma pesquisa ciêntifica é planejar e executar, de forma eficiente, o processo de deliamento amostral.Um boa amamostragem permitira, realizar melhor discussão sobre dados coletados.
 
