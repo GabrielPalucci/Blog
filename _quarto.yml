@@ -14,8 +14,14 @@ website:
             href: about_en.qmd
           - text: Português
             href: about_pt.qmd
-          - text: Talk
-            href: conversa.qmd
+      - text: Talk
+        menu:
+          - text: English
+            href: talk.qmd
+          - text: Português
+            href: talk_pt.qmd
+      - text: Research
+        href: pesquisa.qmd
       - icon: github
         href: https://github.com/
 
