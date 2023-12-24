@@ -4,8 +4,6 @@ project:
 
 website:
   title: "Gabriel Palucci Rosa"
-  page-footer:
-    left: "Website made with [Quarto](https://quarto.org/), by Gabriel Palucci Rosa."
     right:
       - icon: github
         href: https://github.com/GabrielPalucci/
@@ -31,6 +29,8 @@ website:
         href: research.qmd
       - icon: github
         href: https://github.com/
+    page-footer:
+     left: "Website made with [Quarto](https://quarto.org/), by Gabriel Palucci Rosa."
 
 format:
   html:
