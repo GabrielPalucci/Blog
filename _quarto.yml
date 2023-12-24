@@ -4,6 +4,13 @@ project:
 
 website:
   title: "Gabriel Palucci Rosa"
+  page-footer:
+    left: "Website made with [Quarto](https://quarto.org/), by Gabriel Palucci Rosa."
+    right:
+      - icon: github
+        href: https://github.com/GabrielPalucci/
+      - icon: envelope
+        href: gabrielpalucciufu@gmail.com
   navbar:
     logo: "solo.png"
     background: primary
@@ -11,15 +18,15 @@ website:
       - text: About
         menu:
           - text: English
-            href: about_en.qmd
+            href: about/about_en.qmd
           - text: Português
-            href: about_pt.qmd
+            href: about/about_pt.qmd
       - text: Talk
         menu:
           - text: English
-            href: talk.qmd
+            href: talk/talk_en.qmd
           - text: Português
-            href: talk_pt.qmd
+            href: talk/talk_pt.qmd
       - text: Research
         href: pesquisa.qmd
       - icon: github
