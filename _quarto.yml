@@ -30,7 +30,7 @@ website:
       - text: Research
         href: research.qmd
       - text: Blog
-        href: posts
+        href: blog.qmd
       - icon: github
         href: https://github.com/
 

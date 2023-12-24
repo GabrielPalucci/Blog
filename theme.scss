@@ -1,29 +1,32 @@
+
+
 /*-- scss:defaults --*/
- 
 $primaria: #A76938;
 $secundaria: #FFC598;
 
+
+
+
+
 $link-color: $primaria;
 $navbar-bg: $primaria;
-
-
 $code-block-bg: $secundaria;
+
+
+
 
 $font-family-base: "sans-serif" !default;
 $headings-font-family:"sans-serif" !default;
-
 $font-family-sans-serif: "Open Sans", "Cambria", "Georgia", "serif";  
 
 
+
 /*-- scss:rules --*/
+
+
+
 div.quarto-post .listing-categories .listing-category {
     background-color: #965322;
     color: white;
-  
 } 
 
-quarto-margin-sidebar .quarto-listing-category-title {
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 0
-}

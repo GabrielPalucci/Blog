@@ -1,12 +1,15 @@
 ---
+image: "solo.jpg"
+date: "2023-12-22"
 title: "Pensando sobre o processo de Amostragem"
 author: "Gabriel Palucci Rosa"
-date: "2023-12-22"
-categories: [code, soil, analysis]
-image: "solo.jpg"
 toc: true
 toc-title: "Tabela de Conteúdo"
 lang: pt
+listing:
+  type: table
+  contents: posts
+  fields: [image, date, title, author, reading-time]
 ---
 
 # Introdução

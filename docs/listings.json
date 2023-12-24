@@ -2,7 +2,17 @@
   {
     "listing": "/index.html",
     "items": [
-      "/defaut.html"
+      "/blog.html"
     ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/Amostragem/Amostragem.html"
+    ]
+  },
+  {
+    "listing": "/posts/Amostragem/Amostragem.html",
+    "items": []
   }
 ]
