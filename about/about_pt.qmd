@@ -1,7 +1,7 @@
 ---
 title: "Sobre"
 lang: pt
-image: image.jpg
+image: about/image.jpg
 language: 
     fr:
       title-block-published: "About"
