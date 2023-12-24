@@ -28,7 +28,7 @@ website:
           - text: Português
             href: talk/talk_pt.qmd
       - text: Research
-        href: pesquisa.qmd
+        href: research.qmd
       - icon: github
         href: https://github.com/
 
