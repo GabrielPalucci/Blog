@@ -29,6 +29,8 @@ website:
             href: talk/talk_pt.qmd
       - text: Research
         href: research.qmd
+      - text: Blog
+        href: posts
       - icon: github
         href: https://github.com/
 
