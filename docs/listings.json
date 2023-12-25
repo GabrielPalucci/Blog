@@ -1,12 +1,20 @@
 [
   {
-    "listing": "/blog.html",
+    "listing": "/publication.html",
     "items": [
-      "/posts/Amostragem/Amostragem.html"
+      "/publication/vocoroca.html",
+      "/publication/pantanal_1.html",
+      "/publication/arido.html"
     ]
   },
   {
     "listing": "/posts/Amostragem/Amostragem.html",
     "items": []
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/Amostragem/Amostragem.html"
+    ]
   }
 ]

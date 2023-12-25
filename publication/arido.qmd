@@ -1,0 +1,32 @@
+---
+title: "The Brazilian semiarid region over the past 21,000 years: Vegetation dynamics in small pulses of higher humidity"
+comments: false
+date: 5/4/2018
+author:
+  - name: Rafael César Silva
+  - name: Guilherme Resende Corrêa
+  - name: Daniel Meira Arruda
+  - name: Gustavo Vieira Veloso
+  - name: Elpídio Inácio Fernando-Filho
+  - name: Hugo Galvão Cândido 
+  - name: Fábio Soares de Oliveria
+  - name: Gabriel Palucci Rosa
+  - name: Hermann Behling
+  - name: Carlos Ernesto Gonçalves Renaud Schaefer
+categories: [soil, classification]
+---
+
+## Abstract
+
+```{=html}
+
+    <style>
+        body {
+            text-align: justify;
+          
+        }
+    </style>
+<body>
+    <p>In South America, one of the least addressed regions in paleoecological studies is the Brazilian Semiarid region, composed of vegetation from different biomes and currently marked by an arid climate. Although environmental conditions do not favor the formation of palynological sites, previous studies have indicated an expansion of savanna vegetation during the Last Glacial Maximum (LGM). However, more refined analyses with better spatial and temporal resolutions are important for a better understanding of these environments. The region\`s past reconstructed by models is related to intense climate changes on brief time scales in the Pleistocene and Holocene. Furthermore, paleoclimatic modeling reconstructions that only reproduce atmospheric conditions do not always represent all factors for vegetation formation and dynamics through time. In this work, we aimed to use the combination of bioclimatic and edaphic predictors to build models with machine learning algorithms capable of predicting the current and last 21,000 years vegetation. Our results show that there is a significant gain in precision in the classification of vegetation formations when edaphic predictors are added. The use of subsurface horizons to generate edaphic attributes also resulted in better details of the local distribution of vegetation. The reconstruction of the past climate showed that the greatest change was promoted during the Heinrich Stadial 1 period; with the retraction of areas of open vegetation formations of the Hyperxerophilous Caatinga, areas of Arboreal Caatinga, Forested Caatinga, and Seasonal Deciduous Forest advanced. The current vegetation cover was established only in the Late Holocene, a period in which the humid conditions of the region allowed occupation by mostly dry vegetation  </p>
+</body>
+```

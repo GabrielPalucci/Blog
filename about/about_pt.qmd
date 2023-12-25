@@ -17,11 +17,11 @@ about:
       href: https://github.com/GabrielPalucci
 ---
 
+
 ```{=html}
 
     <style>
         body {
-            font-family: sans-serif;
             text-align: justify;
           
         }

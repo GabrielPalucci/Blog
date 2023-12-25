@@ -1,0 +1,28 @@
+---
+title: "Relação solo-ambiente em área degradada por voçoroca no Triângulo Mineiro, Minas Gerais"
+comments: false
+date: 15/09/2023
+author:
+  - name: Guilherme Resende Corrêa
+  - name: Gabriel Palucci Rosa
+  - name: Maria Lúcia Furtado Coelho Campos
+  - name: Gabriel Miranda Paranaiba Bernardes
+  - name: Flávia Monize Ferreira dos Santos
+  - name: Viviane Arantes Koch
+  - name: Diogo Costa Nascimento
+---
+
+## Abstract
+
+```{=html}
+    <style>
+        body {
+            text-align: justify;
+        }
+
+    </style>
+<body>
+    <p>Soil  degradation  represents  a  current  and  future  risk  of  compromising  ecosystem  services. This  papper  aims  to characterize  the  soil  attributes  of  a  degraded  area  and  conserved  Savana  fragments  in  Minas  Gerais  state,  Brazil.For  this purpose, a multitemporal assessment of a gully using GIS was carried out; field work was carried out with collections at 39 sampling  points  and  description  of  5  soil  profiles,  in  previously  stratified  environments;  in  the  laboratory,  the  physical, chemical and organic matter attributes of the soil was determined and statistical analyzes was conducted.Time after time, an evolution of soil degradation of 62% of thearea was estimated, going from 499.5 m²/year in the period of accelerated erosion (1964-1979) to 96.9 m²/year (2005 -2020). The PCA highlights the Mata environment as the most fertile, with associated vectors of   organic   matter,   base   saturation   and   macro   and   micronutrients;   Statistical   tests   indicate   variations   between   the granulometric fractions of conserved environments and degraded areas and equality of organic matter in Cerradão and Mata to  the  detriment  of  gullie.  Organic  matter  management,  aiming  at  its  incorporation  and  increment  in  the  soil,  should  be privileged in ecosystemrestoration projects
+  </p>
+</body>
+```

@@ -15,21 +15,21 @@ website:
     logo: "solo.png"
     background: primary
     right:
-      - text: About
+      - text: ABOUT
         menu:
           - text: English
             href: about/about_en.qmd
           - text: Português
             href: about/about_pt.qmd
-      - text: Talk
+      - text: TALK
         menu:
           - text: English
             href: talk/talk_en.qmd
           - text: Português
             href: talk/talk_pt.qmd
-      - text: Research
-        href: research.qmd
-      - text: Blog
+      - text: PUBLICATIONS
+        href: publication.qmd
+      - text: BLOG
         href: blog.qmd
       - icon: github
         href: https://github.com/

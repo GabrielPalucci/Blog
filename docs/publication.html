@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Gabriel Palucci Rosa - Experiências</title>
+<title>Gabriel Palucci Rosa – publication</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,21 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -58,21 +61,52 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../solo.png" alt="" class="navbar-logo">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./solo.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Gabriel Palucci Rosa</span>
     </a>
   </div>
@@ -88,11 +122,11 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
         <li>
-    <a class="dropdown-item" href="../about/about_en.html" rel="" target="">
+    <a class="dropdown-item" href="./about/about_en.html" rel="" target="">
  <span class="dropdown-text">English</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/about_pt.html" rel="" target="">
+    <a class="dropdown-item" href="./about/about_pt.html" rel="" target="">
  <span class="dropdown-text">Português</span></a>
   </li>  
     </ul>
@@ -103,21 +137,21 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-talk">    
         <li>
-    <a class="dropdown-item" href="../talk/talk_en.html" rel="" target="">
+    <a class="dropdown-item" href="./talk/talk_en.html" rel="" target="">
  <span class="dropdown-text">English</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../talk/talk_pt.html" rel="" target="">
+    <a class="dropdown-item" href="./talk/talk_pt.html" rel="" target="">
  <span class="dropdown-text">Português</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../publication.html" rel="" target="">
+    <a class="nav-link active" href="./publication.html" rel="" target="" aria-current="page">
  <span class="menu-text">PUBLICATIONS</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../blog.html" rel="" target="">
+    <a class="nav-link" href="./blog.html" rel="" target="">
  <span class="menu-text">BLOG</span></a>
   </li>  
   <li class="nav-item compact">
@@ -133,37 +167,129 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="classification">classification <span class="quarto-category-count">(1)</span></div><div class="category" data-category="soil">soil <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<div class="quarto-about-trestles">
-  <div class="about-entity">
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Experiências</h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header>
-    <div class="about-links">
-  <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/GabrielPalucci" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 
-</main></div>
+
+<p style="text-align: center; font-size: 40px;">
+Publication
+</p>
+<p style="text-align: center; font-size: 20px;">
+This is my bookcase for research publication
+</p>
+<hr>
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1709953200000" data-listing-file-modified-sort="1703543185671" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="thumbnail">
+<p><a href="./publication/vocoroca.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
- <!-- /main -->
+<div class="body">
+<a href="./publication/vocoroca.html">
+<h3 class="no-anchor listing-title">
+Relação solo-ambiente em área degradada por voçoroca no Triângulo Mineiro, Minas Gerais
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+Soil  degradation  represents  a  current  and  future  risk  of  compromising  ecosystem  services. This  papper  aims  to characterize  the  soil  attributes  of  a …
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./publication/vocoroca.html">
+<div class="listing-date">
+Mar 9, 2024
+</div>
+<div class="listing-author">
+Guilherme Resende Corrêa, Gabriel Palucci Rosa, Maria Lúcia Furtado Coelho Campos, Gabriel Miranda Paranaiba Bernardes, Flávia Monize Ferreira dos Santos, Viviane Arantes Koch, Diogo Costa Nascimento
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1586660400000" data-listing-file-modified-sort="1703543509361" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="thumbnail">
+<p><a href="./publication/pantanal_1.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="./publication/pantanal_1.html">
+<h3 class="no-anchor listing-title">
+Edaphic gradient and phytophysiognomies of Pantanal do Abobral, Brazil
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+Pantanal is considered one of the largest wetlands inside South America continent. Through the seasonally flood cycles, Pantanal landscape changes in terrestrial, seasonally…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./publication/pantanal_1.html">
+<div class="listing-date">
+Apr 12, 2020
+</div>
+<div class="listing-author">
+Roberta Franco Pereira de Queiroz, Guilherme Resende Corrêa, Frederico dos Santos Gradella, Gabriel Palucci Rosa
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="soil,classification" data-listing-date-sort="1525402800000" data-listing-file-modified-sort="1703544555507" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="thumbnail">
+<p><a href="./publication/arido.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="./publication/arido.html">
+<h3 class="no-anchor listing-title">
+The Brazilian semiarid region over the past 21,000 years: Vegetation dynamics in small pulses of higher humidity
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('soil'); return false;">
+soil
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('classification'); return false;">
+classification
+</div>
+</div>
+<a href="./publication/arido.html">
+<div class="listing-description">
+In South America, one of the least addressed regions in paleoecological studies is the Brazilian Semiarid region, composed of vegetation from different biomes and currently…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./publication/arido.html">
+<div class="listing-date">
+May 4, 2018
+</div>
+<div class="listing-author">
+Rafael César Silva, Guilherme Resende Corrêa, Daniel Meira Arruda, Gustavo Vieira Veloso, Elpídio Inácio Fernando-Filho, Hugo Galvão Cândido, Fábio Soares de Oliveria, Gabriel Palucci Rosa, Hermann Behling, Carlos Ernesto Gonçalves Renaud Schaefer
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -184,6 +310,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -406,7 +539,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </a>
   </li>  
     <li class="nav-item compact">
-    <a class="nav-link" href="../gabrielpalucciufu@gmail.com">
+    <a class="nav-link" href="./gabrielpalucciufu@gmail.com">
       <i class="bi bi-envelope" role="img">
 </i> 
     </a>
