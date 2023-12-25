@@ -1,14 +1,7 @@
 ---
-title: "Experiências"
-image: image.jpg
 comments: false
-about: 
-  template: trestles
-  links:
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile
-    - icon: github
-      text: Github
-      href: https://github.com/GabrielPalucci
 ---
+
+{{< fa triangle-exclamation >}} **Under Construction** {{< fa person-digging >}}
+{{< fa triangle-exclamation >}} **Warning** {{< fa person-digging >}}
+{{< fa triangle-exclamation >}} **Under Construction** {{< fa person-digging >}}

@@ -1,12 +1,4 @@
 ---
-listing:
-  contents: blog.qmd
-  sort: "date desc"
-  type: default
-  categories: false
-  sort-ui: false
-  filter-ui: false
-page-layout: full
-title-block-banner: true
+Tithe: Welcome
 comments: false
 ---

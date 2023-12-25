@@ -1,3 +1,26 @@
 ---
 comments: false
 ---
+
+{{< fa book-open >}}<b> Formação Acadêmica</b>
+
+-   Degree in <mark>Geography</mark> from the Federal University of Uberlândia
+
+-   Master\`s degree in <mark>Geography</mark> from the Federal University of Uberlândia
+
+-   PhD student in <mark>Soil and Plant Nutrition</mark> at the Federal University of Viçosa
+
+{{< fa note-sticky >}}<b> Articles</b>
+
+---
+
+SILVA, RAFAEL CÉSAR ; CORRÊA, GUILHERME RESENDE ; ARRUDA, DANIEL MEIRA ; VELOSO, GUSTAVO VIEIRA ; FERNANDES-FILHO, ELPÍDIO INÁCIO ; CÂNDIDO, HUGO GALVÃO ; DE OLIVEIRA, FÁBIO SOARES ; ROSA, GABRIEL PALUCCI ; BEHLING, HERMANN ; SCHAEFER, CARLOS ERNESTO GONÇALVES RENAUD . The Brazilian semiarid region over the past 21,000 years: Vegetation dynamics in small pulses of higher humidity. Ecological Informatics, v. 77, p. 102259, 2023. 
+
+add-doi: https://doi.org/10.1016/j.ecoinf.2023.102259
+---
+
+/
+
+CORRÊA, GUILHERME RESENDE ; ROSA, GABRIEL PALUCCI ; CAMPOS, MARIA LÚCIA FURTADO COELHO ; BERNARDES, GABRIEL MIRANDA PARANAIBA ; SANTOS, FLÁVIA MONIZE FERREIRA DOS ; KOCH, VIVIANE ARANTES ; NASCIMENTO, DIOGO COSTA . Relação solo-ambiente em área degradada por voçoroca no Triângulo Mineiro, Minas Gerais. REVISTA BRASILEIRA DE GEOMORFOLOGIA, v. 24, p. e2384, 2023.
+
+QUEIROZ, ROBERTA FRANCO PEREIRA DE ; CORRÊA, GUILHERME RESENDE ; GRADELLA, FREDERICO DOS SANTOS ; ROSA, GABRIEL PALUCCI . GRADIENTE EDÁFICO DEFINE AS FITOFISIONOMIAS DO PANTANAL DO ABOBRAL, BRASIL. Oecologia Australis, v. 23, p. 730-743, 2019.

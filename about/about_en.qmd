@@ -32,13 +32,3 @@ about:
     I am an R software enthusiast, and one of the reasons for creating the blog is to maintain constant use and learn new functions.  </p>
 </body>
 ```
-
-------------------------------------------------------------------------
-
-| {{< fa book-open >}}<b> Formação Acadêmica</b>
-
--   Degree in <mark>Geography</mark> from the Federal University of Uberlândia
-
--   Master\`s degree in <mark>Geography</mark> from the Federal University of Uberlândia
-
--   PhD student in <mark>Soil and Plant Nutrition</mark> at the Federal University of Viçosa

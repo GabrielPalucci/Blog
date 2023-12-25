@@ -1,6 +1,5 @@
 ---
 title: "Experiências"
-image: image.jpg
 comments: false
 about: 
   template: trestles

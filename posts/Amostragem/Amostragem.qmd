@@ -1,5 +1,5 @@
 ---
-image: "solo.jpg"
+image: "amostra.jpg"
 date: "2023-12-22"
 title: "Pensando sobre o processo de Amostragem"
 author: "Gabriel Palucci Rosa"
