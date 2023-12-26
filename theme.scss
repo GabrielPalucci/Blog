@@ -1,19 +1,46 @@
 /*-- scss:defaults --*/
-$primaria: #A76938;
-$secundaria: #FFC598;
-
-
+$primaria: #FDF1E1  ;
+$secundaria:#FDF1E1	;
+$body-bg: #FDF1E1;
 $link-color: $primaria;
 $navbar-bg: $primaria;
-$code-block-bg: $secundaria;
 
 
 
 
 /*-- scss:rules --*/
 
+
+element.style {
+}
+.page-columns.column-page>* {
+    grid-column: page-start/page-end;
+}
+.page-columns>* {
+    grid-column: body-content-start/body-content-end;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+user agent stylesheet
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+
 div.quarto-post .listing-categories .listing-category {
-    background-color: #965322;
+    background-color: #C4A484	;
     color: white;
 } 
 

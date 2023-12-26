@@ -1,5 +1,7 @@
 ---
 title: "Edaphic gradient and phytophysiognomies of Pantanal do Abobral, Brazil"
+title-block-banner: true
+title-block-banner-color: "#ffff"
 comments: false
 categories:
   - Environmental stratification

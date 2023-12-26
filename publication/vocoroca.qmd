@@ -1,5 +1,7 @@
 ---
-title: "Soil-environment relationship in an area degraded by gullies in theMinas Gerais state, Brazil"
+title: <b>"Soil-environment relationship in an area degraded by gullies in the Minas Gerais state, Brazil</b>"
+title-block-banner: voc.jpeg
+title-block-banner-color: "#ffff"
 comments: false
 categories:
   - Brazilian savanna
