@@ -1,9 +1,10 @@
 /*-- scss:defaults --*/
-$primaria: #FDF1E1  ;
-$secundaria:#FDF1E1	;
+
+$primaria: #FDF1E1;
+$secundaria:#FDF1E1;
 $body-bg: #FDF1E1;
-$link-color: $primaria;
-$navbar-bg: $primaria;
+$link-color: #FDF1E1;
+$navbar-bg: #FDF1E1;
 
 
 
@@ -19,10 +20,12 @@ element.style {
 .page-columns>* {
     grid-column: body-content-start/body-content-end;
 }
+
 p {
     margin-top: 0;
     margin-bottom: 1rem;
 }
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -38,7 +41,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-
 div.quarto-post .listing-categories .listing-category {
     background-color: #C4A484	;
     color: white;
@@ -49,7 +51,6 @@ div.quarto-post .listing-categories .listing-category {
     font-weight: 100;
     font-size: 0rem;
 }
-
 
 #quarto-margin-sidebar .quarto-listing-category {
     padding-top: 0;
