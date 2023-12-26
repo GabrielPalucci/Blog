@@ -1,6 +1,11 @@
 ---
 title: "Edaphic gradient and phytophysiognomies of Pantanal do Abobral, Brazil"
 comments: false
+categories:
+  - Environmental stratification
+  - Pedological variables
+  - Soil-vegetation relationship
+  - Wetlands
 date: 16/12/2019
 author:
   - name: Roberta Franco Pereira de Queiroz

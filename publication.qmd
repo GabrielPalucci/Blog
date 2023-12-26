@@ -1,16 +1,18 @@
 ---
+format:
+  html: 
+    grid:
+      sidebar-width: 0px
+      margin-width: 0px
 listing:
   contents: publication
   type: default
   categories: true
-  sort-ui: false
-  filter-ui: false
   max-description-length: 200
   max-items: 4
-  table-striped: true
-page-layout: full
 comments: false
 ---
+
 
 ```{=html}
 

@@ -2,6 +2,13 @@
 title: "The Brazilian semiarid region over the past 21,000 years: Vegetation dynamics in small pulses of higher humidity"
 comments: false
 date: 5/4/2018
+categories:
+ - Brazilian semiarid region
+ - Vegetation formations
+ - Pleistocene
+ - Holocene
+ - Paleoclimatic modeling
+ - Soils
 author:
   - name: Rafael César Silva
   - name: Guilherme Resende Corrêa

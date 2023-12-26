@@ -1,6 +1,11 @@
 ---
-title: "Relação solo-ambiente em área degradada por voçoroca no Triângulo Mineiro, Minas Gerais"
+title: "Soil-environment relationship in an area degraded by gullies in theMinas Gerais state, Brazil"
 comments: false
+categories:
+  - Brazilian savanna
+  - Soil erosion
+  - Soil-environment
+  - Ecosystem restoration
 date: 15/09/2023
 author:
   - name: Guilherme Resende Corrêa

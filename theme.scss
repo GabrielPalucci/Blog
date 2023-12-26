@@ -22,3 +22,16 @@ div.quarto-post .listing-categories .listing-category {
     font-weight: 100;
     font-size: 0rem;
 }
+
+
+#quarto-margin-sidebar .quarto-listing-category {
+    padding-top: 0;
+    font-size: 0rem;
+}
+
+div.quarto-post .thumbnail {
+    flex-basis: 1%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
