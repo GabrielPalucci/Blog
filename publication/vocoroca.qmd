@@ -1,6 +1,6 @@
 ---
 title: "Soil-environment relationship in an area degraded by gullies in the Minas Gerais state, Brazil"
-title-block-banner: voc.jpeg
+title-block-banner: voc.jpg
 title-block-banner-color: "black"
 comments: false
 categories:
