@@ -1,6 +1,6 @@
 ---
 title: "The Brazilian semiarid region over the past 21,000 years: Vegetation dynamics in small pulses of higher humidity"
-title-block-banner: cat2.jpg
+title-block-banner: cat.jpg
 title-block-banner-color: "black"
 comments: false
 date: 5/4/2018

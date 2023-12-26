@@ -6,11 +6,7 @@ $body-bg: #FDF1E1;
 $link-color: #FDF1E1;
 $navbar-bg: #FDF1E1;
 
-
-
-
 /*-- scss:rules --*/
-
 
 element.style {
 }
@@ -42,8 +38,8 @@ body {
 }
 
 div.quarto-post .listing-categories .listing-category {
-    background-color: #C4A484	;
-    color: white;
+    background-color: white	;
+    color: black;
 } 
 
 #quarto-margin-sidebar .quarto-listing-category-title {
@@ -63,3 +59,11 @@ div.quarto-post .thumbnail {
     flex-shrink: 0;
 }
 
+.quarto-title .quarto-categories .quarto-category {
+    padding: 0.25em 0.75em;
+    font-size: .75em;
+    text-transform: uppercase;
+    border: solid 1px;
+    border-radius: 0.25rem;
+    opacity: .9;
+}
