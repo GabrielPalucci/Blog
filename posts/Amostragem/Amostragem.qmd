@@ -6,10 +6,6 @@ author: "Gabriel Palucci Rosa"
 toc: true
 toc-title: "Tabela de Conteúdo"
 lang: pt
-listing:
-  type: table
-  contents: posts
-  fields: [image, date, title, author, reading-time]
 ---
 
 # Introdução

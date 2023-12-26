@@ -13,7 +13,6 @@ author:
   - name: Gabriel Palucci Rosa
   - name: Hermann Behling
   - name: Carlos Ernesto Gonçalves Renaud Schaefer
-categories: [soil, classification]
 ---
 
 ## Abstract

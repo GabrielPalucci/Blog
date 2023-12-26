@@ -1,20 +1,29 @@
 ---
 listing:
   contents: publication
-  sort: "date desc"
   type: default
   categories: true
   sort-ui: false
   filter-ui: false
+  max-description-length: 200
+  max-items: 4
+  table-striped: true
 page-layout: full
 comments: false
 ---
 
+```{=html}
+
 <p style="text-align: center; font-size: 40px;">
+
 Publication
-</p>
-<p style="text-align: center; font-size: 20px;">
-This is my bookcase for research publication
+
 </p>
 
+<p style="text-align: center; font-size: 20px;">
+
+This is my bookcase for research publication
+
+</p>
+```
 ------------------------------------------------------------------------

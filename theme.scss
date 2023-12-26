@@ -7,9 +7,6 @@ $link-color: $primaria;
 $navbar-bg: $primaria;
 $code-block-bg: $secundaria;
 
-$font-family-base: "sans-serif" !default;
-$headings-font-family:"sans-serif" !default;
-$font-family-sans-serif: "Open Sans", "Cambria", "Georgia", "serif";  
 
 
 
@@ -20,3 +17,8 @@ div.quarto-post .listing-categories .listing-category {
     color: white;
 } 
 
+#quarto-margin-sidebar .quarto-listing-category-title {
+    cursor: pointer;
+    font-weight: 100;
+    font-size: 0rem;
+}

@@ -13,14 +13,7 @@ website:
         href: gabrielpalucciufu@gmail.com
   navbar:
     logo: "solo.png"
-    background: primary
     right:
-      - text: ABOUT
-        menu:
-          - text: English
-            href: about/about_en.qmd
-          - text: Português
-            href: about/about_pt.qmd
       - text: TALK
         menu:
           - text: English
@@ -33,6 +26,7 @@ website:
         href: blog.qmd
       - icon: github
         href: https://github.com/
+        
 
 format:
   html:
