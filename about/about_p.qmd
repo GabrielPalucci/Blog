@@ -1,4 +1,37 @@
 ---
-title: "Formação A"
-
+title: "About"
+image: image.png
+about:
+  template: trestles
+links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile
+    - icon: github
+      text: Github
+      href: https://github.com/GabrielPalucci
+comments: false
 ---
+
+```{=html}
+
+    <style>
+        body {
+            text-align: justify; }
+    </style>
+<body>
+    <p><b>Olá, meu nome é Gabriel Palucci Rosa e <b>bem-vindo</b> ao meu blog.</b> Busco trazer conteúdos sobre ciência, discussões sobre ciência do solo e, principalmente, reflexões/histórias sobre alguns trabalhos de campo.
+    
+    Sou um entusiasta do sofware R, sendo que um dos motívos para criar o blog é manter o constante uso e aprender novas funções.  </p>
+</body>
+```
+
+------------------------------------------------------------------------
+
+| {{< fa book-open >}}<b> Formação Acadêmica</b>
+
+-   Graduação em <mark>Geografia</mark> pela Universidade Federal de Uberlândia
+
+-   Mestrado em <mark>Geografia</mark> pela Universidade Federal de Uberlâdia
+
+-   Doutorando em <mark>Solo e Nutrição de plantas</mark> pela Unviversidade Federal de Viçosa

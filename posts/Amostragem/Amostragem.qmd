@@ -1,11 +1,12 @@
 ---
-image: "amostra.jpg"
+image: figure.jpg
+page-layout: article
+title-block-banner: coleta.png
 date: "2023-12-22"
 title: "Pensando sobre o processo de Amostragem"
 author: "Gabriel Palucci Rosa"
 toc: true
 toc-title: "Tabela de Conteúdo"
-lang: pt
 ---
 
 # Introdução

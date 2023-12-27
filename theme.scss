@@ -76,4 +76,20 @@ div.quarto-post .thumbnail {
     border-radius: 5px;
 }
 
-$background-color: white;
+.navbar-logo {
+    max-height: 24px;
+    width: auto;
+    padding-right: 4px;
+}
+
+mark, .mark {
+    padding: 0.2em;
+    background-color: #d2a88f;
+}
+
+.sidebar nav[role=doc-toc] ul>li>a.active, .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
+    border-left: 1px solid #9e4826;
+    color: #9e4826 !important;
+}
+
+$background-color: black;

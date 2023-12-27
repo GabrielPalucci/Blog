@@ -71,9 +71,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -164,35 +164,32 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1703214000000" data-listing-file-modified-sort="1703592639911" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8">
-<div class="thumbnail">
-<p><a href="./posts/Amostragem/Amostragem.html"> <img src="./posts/Amostragem/amostra.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/Amostragem/Amostragem.html">
-<h3 class="no-anchor listing-title">
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1703214000000" data-listing-file-modified-sort="1703698905352" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8">
+<a href="./posts/Amostragem/Amostragem.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/Amostragem/figure.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 Pensando sobre o processo de Amostragem
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
+</h5>
+<div class="card-text listing-description">
 Uns dos vários desafios na realizar uma…
 </div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/Amostragem/Amostragem.html">
-<div class="listing-date">
-Dec 22, 2023
-</div>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Gabriel Palucci Rosa
 </div>
-</a>
+<div class="listing-date">
+Dec 22, 2023
 </div>
+</div>
+</div>
+</div>
+</a>
 </div>
 </div>
 <div class="listing-no-matching d-none">
