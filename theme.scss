@@ -1,10 +1,10 @@
 /*-- scss:defaults --*/
 
-$primaria: #FDF1E1;
-$secundaria:#FDF1E1;
+
 $body-bg: #FDF1E1;
 $link-color: #FDF1E1;
 $navbar-bg: #FDF1E1;
+
 
 /*-- scss:rules --*/
 
@@ -69,3 +69,11 @@ div.quarto-post .thumbnail {
     color: black;
     background-color: white	
 }
+
+.btn-secondary {
+    color: black;
+    background: white;
+    border-radius: 5px;
+}
+
+$background-color: white;

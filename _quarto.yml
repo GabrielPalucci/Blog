@@ -12,21 +12,19 @@ website:
       - icon: envelope
         href: gabrielpalucciufu@gmail.com
   navbar:
-    logo: "solo.png"
     right:
-      - text: TALK
+      - text: ABOUT
         menu:
           - text: English
-            href: talk/talk_en.qmd
+            href: about/about_e.qmd
           - text: Português
-            href: talk/talk_pt.qmd
+            href: about/about_p.qmd
       - text: PUBLICATIONS
         href: publication.qmd
       - text: BLOG
         href: blog.qmd
       - icon: github
         href: https://github.com/
-        
 
 format:
   html:
