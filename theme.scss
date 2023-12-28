@@ -106,3 +106,18 @@ pre.sourceCode {
     font-weight: 400;
     color:#9e4826;
 }
+
+.quarto-grid-item .listing-categories .listing-category {
+    color: #9e4826;
+    border: solid 1px black;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    font-size: .65em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.15em;
+    padding-bottom: 0.15em;
+    cursor: pointer;
+    margin-right: 4px;
+    margin-bottom: 4px;
+}

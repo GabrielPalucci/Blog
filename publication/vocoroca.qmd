@@ -19,7 +19,8 @@ author:
   - name: Diogo Costa Nascimento
 ---
 
-Revista Brasileira de Geomorfologia   
+Revista Brasileira de Geomorfologia
+
 ```{=html}
 
 <head>

@@ -1,0 +1,178 @@
+---
+image: ppa.png
+page-layout: article
+title-block-banner: pp.jpg
+date: "2023-12-22"
+title: "Utilizando Tidyverse | palmerpenguins"
+author: "Gabriel Palucci Rosa"
+toc: true
+toc-title: "Tabela de Conteúdo"
+categories:
+  - Penguins
+  - Tidyverse
+  - ggplot2
+---
+
+# 
+
+> *Aí menor,nunca desista, corre atrás porque é isso que um vencedor faz. BIG Z, Ta Dando Onda*
+
+# Capítulo 1
+
+# Adicionando Pacotes
+
+```{r, warning=FALSE}
+
+library(pacman)
+
+p_load("tidyverse", "magrittr", "palmerpenguins")
+
+library("tidyverse")
+library("magrittr")
+library('palmerpenguins')
+
+```
+
+# Visualizando Base de Dados
+
+```{r}
+
+
+pinguim <- dplyr::as_tibble(palmerpenguins::penguins)
+rmarkdown::paged_table(pinguim)
+```
+
+# Utilizando Dplyr
+
+## // Rename()
+
+Podemos observar que todos nomes das classes estão em inglês, assim, vamos modifica-los utilizando utilizando **rename**
+
+```{r}
+
+pinguim <- pinguim %>% 
+           rename(Especies = species, 
+                  Ilha = island,
+                  Tamanho_Bico_mm = bill_length_mm,
+                  Espessura_Bico_mm= bill_depth_mm,
+                  Nadadeira_mm = flipper_length_mm,
+                  Peso_g = body_mass_g,
+                  Sexo = sex,
+                  Ano = year)
+
+
+
+rmarkdown::paged_table(pinguim)
+
+```
+
+##Slice
+
+Utilizamos Slice para selecionar **fatia** da nossa base de dados
+
+```{r, warning=FALSE}
+
+
+pinguim %>% 
+        slice(1:20) %>%
+        rmarkdown::paged_table(pinguim)
+
+```
+
+##Select
+
+Utilizamos Slice para selecionar **Colunas** do nossa base de dados.
+
+```{r paged.print=FALSE}
+
+pinguim %>% dplyr::select(Especies, Ilha, Peso_g) %>%
+            rmarkdown::paged_table(pinguim)
+
+```
+
+##Mutate
+
+Utilizando o Mutate podemos adicionar **colunas** no nosso banco de dados a partir das variáveis ja existentes.
+
+```{r}
+
+
+pinguim %>% 
+      dplyr::mutate(Tam.Esp = Tamanho_Bico_mm/Espessura_Bico_mm) %>%
+      dplyr::select(Especies, Ilha, Tam.Esp) %>%
+      rmarkdown::paged_table()
+
+```
+
+##Filter
+
+Como o nome ja diz, o **Filter** tem como princípio a filtragemn do nosso base de dados com a utilização de paramétros como:
+
+== Igual\
+\> Maior\
+\< Menor\
+\>= Maior e igual\
+\<= Menor e Igual\
+!= Diferente\
+%in% Se está dentro\
+is.na Sem valores
+
+Podemos adicionar condições como **,** para **e** e **\|** para **ou**.
+
+```{r, }
+
+
+pinguim %>% filter(Peso_g > 1000, Espessura_Bico_mm > 10) %>% 
+             rmarkdown::paged_table()                 
+
+```
+
+##Relocate()
+
+Utilizamos para relocar as **colunas** de posição em nossa base de dados
+
+```{r}
+  
+
+pinguim %>% 
+      relocate(Ilha, Sexo, Especies) %>%
+      rmarkdown::paged_table()                 
+
+
+
+```
+
+## Arrange()
+
+Organizar a nossa base de dados
+
+```{r}
+
+pinguim %>% 
+      select(Especies, Ilha, Peso_g) %>% 
+      arrange(desc(Peso_g)) %>%
+      rmarkdown::paged_table()                 
+
+
+
+
+```
+
+## Group_by() / Summarise()
+
+```{r, warning=FALSE}
+
+pinguim %>% group_by(Ilha, Especies) %>%
+            summarise(PesoMaximo = max(Peso_g), Media_Nadadeira = mean(Nadadeira_mm)) %>%
+            rmarkdown::paged_table()                 
+
+            
+  
+
+```
+
+#Referência
+
+[ ](https://github.com/allisonhorst/palmerpenguins)
+
+![](https://www.tidyverse.org/images/hex-tidyverse.png){width="15%"} ![](https://magrittr.tidyverse.org/logo.png){width="15%"} ![](https://allisonhorst.github.io/palmerpenguins/reference/figures/logo.png){width="15%"}

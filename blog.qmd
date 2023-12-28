@@ -8,3 +8,37 @@ page-layout: full
 title-block-banner: true
 comments: false
 ---
+
+
+
+
+```{=html}
+<p style="font-size:25px; text-align: center "> <b>This is the way</b></p>
+
+
+  <style>
+        body {
+            text-align: justify; }
+    </style>
+<body>
+
+<p>Olá, nesse espaço pretendo realizar algumas postagens sobre diferentes temáticas, utilizando algumas análises estátísticas ou representações gráficos para auxiliar na discussões dos assuntos </p>
+
+<p style="font-size:25px; text-align: center"> <b>English</b></p>
+
+<body>
+
+<p>Hello, in this space I intend to make some posts on different topics, using some statistical analyzes or graphical representations to assist in the discussion of the subjects
+ </p>
+
+</body>
+```
+
+------------------------------------------------------------------------
+
+```{=html}
+
+<p style="font-size:25px; text-align: center"> <b>Recent posts / Posts recentes
+</b></p>
+
+```

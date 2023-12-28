@@ -10,7 +10,8 @@
   {
     "listing": "/blog.html",
     "items": [
-      "/posts/Amostragem/Amostragem.html"
+      "/posts/Amostragem/Amostragem.html",
+      "/posts/Tidyverse/tidyverse.html"
     ]
   }
 ]

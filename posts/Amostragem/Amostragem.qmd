@@ -7,6 +7,10 @@ title: "Pensando sobre o processo de Amostragem"
 author: "Gabriel Palucci Rosa"
 toc: true
 toc-title: "Tabela de Conteúdo"
+categories:
+  - Solo
+  - Amostragem
+  - ggplot
 ---
 
 # Introdução
