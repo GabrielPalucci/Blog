@@ -84,6 +84,13 @@
     "text": "// Group_by() / Summarise()\n\npinguim %&gt;% group_by(Ilha, Especies) %&gt;%\n            summarise(PesoMaximo = max(Peso_g), Media_Nadadeira = mean(Nadadeira_mm)) %&gt;%\n            rmarkdown::paged_table()                 \n\n`summarise()` has grouped output by 'Ilha'. You can override using the\n`.groups` argument.\n\n\n\n\n  \n\n\n\n#/ Referência"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Gabriel Palucci Rosa",
+    "section": "",
+    "text": "Olá, meu nome é Gabriel Palucci Rosa e bem-vindo ao meu blog. Busco trazer conteúdos sobre ciência, discussões sobre ciência do solo e, principalmente, reflexões/histórias sobre alguns trabalhos de campo. Um dos motívos para criar o blog é manter o constante uso do sofware R!."
+  },
+  {
     "objectID": "about/about_p.html",
     "href": "about/about_p.html",
     "title": "Sobre",
@@ -95,14 +102,14 @@
     "href": "about/about_e.html",
     "title": "About",
     "section": "",
-    "text": "Hello, my name is Gabriel Palucci Rosa and  welcome  to my blog. I seek to bring content about science, discussion about soil science and, mainly, reflections/stories about some fieldwork. One of the reasons for creating the blog is to maintain constant use of the R software.  \n\n\nEducation\n Degree in Geography from the Federal University of Uberlândia\n Master degree Geography from the Federal University of Uberlândia\n PhD student in Soil and Plant Nutrition by the Federal University of Viçosa"
+    "text": "Hello, my name is Gabriel Palucci Rosa and  welcome  to my blog. I seek to bring content about science and discussion about soil science. Learn more about my research interests in   publication . One of the reasons for creating the blog is to maintain constant use of the R software.\n\n\nEducation\n Degree in Geography from the Federal University of Uberlândia\n Master degree Geography from the Federal University of Uberlândia\n PhD student in Soil and Plant Nutrition by the Federal University of Viçosa"
   },
   {
     "objectID": "blog.html",
     "href": "blog.html",
     "title": "Gabriel Palucci Rosa",
     "section": "",
-    "text": "This is the way\n\n  \n\n\nOlá, nesse espaço pretendo realizar algumas postagens sobre diferentes temáticas, utilizando algumas análises estátísticas ou representações gráficos para auxiliar na discussões dos assuntos \n\n\n\n\n Recent posts / Posts recentes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPensando sobre o processo de Amostragem\n\n\n\nSolo\n\n\nAmostragem\n\n\nggplot\n\n\n\n\n\n\n\nGabriel Palucci Rosa\n\n\nDec 22, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUtilizando Tidyverse | palmerpenguins\n\n\n\nPenguins\n\n\nTidyverse\n\n\nggplot2\n\n\n\n\n\n\n\nGabriel Palucci Rosa\n\n\nDec 22, 2023\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "This is the way\n\n  \n\n\nOlá, nesse espaço pretendo realizar algumas postagens sobre diferentes temáticas, utilizando algumas análises estátísticas ou representações gráficos para auxiliar na discussões dos assuntos \n\n\n\n Recent posts / Posts recentes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPensando sobre o processo de Amostragem\n\n\n\nSolo\n\n\nAmostragem\n\n\nggplot\n\n\n\n\n\n\n\nGabriel Palucci Rosa\n\n\nDec 22, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUtilizando Tidyverse | palmerpenguins\n\n\n\nPenguins\n\n\nTidyverse\n\n\nggplot2\n\n\n\n\n\n\n\nGabriel Palucci Rosa\n\n\nDec 22, 2023\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/Amostragem/Amostragem.html",

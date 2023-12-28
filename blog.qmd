@@ -23,7 +23,6 @@ comments: false
 
 <p>Olá, nesse espaço pretendo realizar algumas postagens sobre diferentes temáticas, utilizando algumas análises estátísticas ou representações gráficos para auxiliar na discussões dos assuntos </p>
 <body>
-
 ```
 
 ------------------------------------------------------------------------
