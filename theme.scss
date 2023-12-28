@@ -96,3 +96,13 @@ mark, .mark {
 pre.sourceCode {
     background-color: #e6a578a3;
 }
+
+
+#title-block-header.quarto-title-block.default .quarto-title-meta-heading {
+    text-transform: uppercase;
+    margin-top: 1em;
+    font-size: .8em;
+    opacity: .9;
+    font-weight: 400;
+    color:#9e4826;
+}

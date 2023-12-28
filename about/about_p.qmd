@@ -3,7 +3,7 @@ title: "About"
 image: image.png
 about:
   template: trestles
-links:
+  links:
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile
@@ -20,18 +20,16 @@ comments: false
             text-align: justify; }
     </style>
 <body>
-    <p><b>Olá, meu nome é Gabriel Palucci Rosa e <b>bem-vindo</b> ao meu blog.</b> Busco trazer conteúdos sobre ciência, discussões sobre ciência do solo e, principalmente, reflexões/histórias sobre alguns trabalhos de campo.
-    
-    Sou um entusiasta do sofware R, sendo que um dos motívos para criar o blog é manter o constante uso e aprender novas funções.  </p>
+    <p><b>Olá, meu nome é Gabriel Palucci Rosa e <b>bem-vindo</b> ao meu blog.</b> Busco trazer conteúdos sobre ciência, discussões sobre ciência do solo e, principalmente, reflexões/histórias sobre alguns trabalhos de campo. Um dos motívos para criar o blog é manter o constante uso do sofware R!.  </p>
 </body>
 ```
 
 ------------------------------------------------------------------------
 
-| {{< fa book-open >}}<b> Formação Acadêmica</b>
+### Education
 
--   Graduação em <mark>Geografia</mark> pela Universidade Federal de Uberlândia
+{{< fa graduation-cap >}} Graduação em <mark>Geografia</mark> pela Universidade Federal de Uberlândia
 
--   Mestrado em <mark>Geografia</mark> pela Universidade Federal de Uberlâdia
+{{< fa graduation-cap >}} Mestrado em <mark>Geografia</mark> pela Universidade Federal de Uberlâdia
 
--   Doutorando em <mark>Solo e Nutrição de plantas</mark> pela Unviversidade Federal de Viçosa
+{{< fa book-open >}} Doutorando em <mark>Solo e Nutrição de plantas</mark> pela Unviversidade Federal de Viçosa

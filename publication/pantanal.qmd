@@ -15,9 +15,10 @@ author:
   - name: Roberta Franco Pereira de Queiroz
   - name: Guilherme Resende Corrêa
   - name: Frederico dos Santos Gradella
-  - name: Gabriel Palucci Rosa
+  - name: <b>Gabriel Palucci Rosa</b>
 ---
 
+Oecologia Australis
 ```{=html}
 <head>
     <meta charset="UTF-8">

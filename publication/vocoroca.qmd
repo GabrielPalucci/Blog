@@ -11,7 +11,7 @@ categories:
 date: 15/09/2023
 author:
   - name: Guilherme Resende Corrêa
-  - name: Gabriel Palucci Rosa
+  - name: <b>Gabriel Palucci Rosa</b>
   - name: Maria Lúcia Furtado Coelho Campos
   - name: Gabriel Miranda Paranaiba Bernardes
   - name: Flávia Monize Ferreira dos Santos
@@ -19,7 +19,9 @@ author:
   - name: Diogo Costa Nascimento
 ---
 
+Revista Brasileira de Geomorfologia   
 ```{=html}
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,7 +42,6 @@ author:
 
 </body>
 ```
-
 ## Abstract
 
 ```{=html}

@@ -7,6 +7,13 @@
     "text": "Publication\n\n\n\n\n\nThis is my bookcase for research publication\n\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\nEdaphic gradient and phytophysiognomies of Pantanal do Abobral, Brazil\n\n\n\n\n\n\n\nEnvironmental stratification\n\n\nPedological variables\n\n\nSoil-vegetation relationship\n\n\nWetlands\n\n\n\n\n\n\n\n\n\n\n\nApr 12, 2020\n\n\nRoberta Franco Pereira de Queiroz, Guilherme Resende Corrêa, Frederico dos Santos Gradella, Gabriel Palucci Rosa\n\n\n\n\n\n\n  \n\n\n\n\nSoil-environment relationship in an area degraded by gullies in the Minas Gerais state, Brazil\n\n\n\n\n\n\n\nBrazilian savanna\n\n\nSoil erosion\n\n\nSoil-environment\n\n\nEcosystem restoration\n\n\n\n\n\n\n\n\n\n\n\nMar 9, 2024\n\n\nGuilherme Resende Corrêa, Gabriel Palucci Rosa, Maria Lúcia Furtado Coelho Campos, Gabriel Miranda Paranaiba Bernardes, Flávia Monize Ferreira dos Santos, Viviane Arantes Koch, Diogo Costa Nascimento\n\n\n\n\n\n\n  \n\n\n\n\nThe Brazilian semiarid region over the past 21,000 years: Vegetation dynamics in small pulses of higher humidity\n\n\n\n\n\n\n\nBrazilian semiarid region\n\n\nVegetation formations\n\n\nPleistocene\n\n\nHolocene\n\n\nPaleoclimatic modeling\n\n\nSoils\n\n\n\n\n\n\n\n\n\n\n\nMay 4, 2018\n\n\nRafael César Silva, Guilherme Resende Corrêa, Daniel Meira Arruda, Gustavo Vieira Veloso, Elpídio Inácio Fernando-Filho, Hugo Galvão Cândido, Fábio Soares de Oliveria, Gabriel Palucci Rosa, Hermann Behling, Carlos Ernesto Gonçalves Renaud Schaefer\n\n\n\n\n\n\nNo matching items"
   },
   {
+    "objectID": "publication/pantanal.html",
+    "href": "publication/pantanal.html",
+    "title": "Edaphic gradient and phytophysiognomies of Pantanal do Abobral, Brazil",
+    "section": "",
+    "text": "Oecologia Australis"
+  },
+  {
     "objectID": "publication/pantanal.html#abstract",
     "href": "publication/pantanal.html#abstract",
     "title": "Edaphic gradient and phytophysiognomies of Pantanal do Abobral, Brazil",
@@ -32,14 +39,21 @@
     "href": "about/about_e.html",
     "title": "Sobre",
     "section": "",
-    "text": "Olá, meu nome é Gabriel Palucci Rosa e bem-vindo ao meu blog. Busco trazer conteúdos sobre ciência, discussões sobre ciência do solo e, principalmente, reflexões/histórias sobre alguns trabalhos de campo.\n    Sou um entusiasta do sofware R, sendo que um dos motívos para criar o blog é manter o constante uso e aprender novas funções.  \n\n Formação Acadêmica\n\nGraduação em Geografia pela Universidade Federal de Uberlândia\nMestrado em Geografia pela Universidade Federal de Uberlâdia\nDoutorando em Solo e Nutrição de plantas pela Unviversidade Federal de Viçosa"
+    "text": "Hello, my name is Gabriel Palucci Rosa and  welcome  to my blog. I seek to bring content about science, discussion about soil science and, mainly, reflections/stories about some fieldwork. One of the reasons for creating the blog is to maintain constant use of the R software.  \n\n\nEducation\n Degree in Geography from the Federal University of Uberlândia\n Master degree Geography from the Federal University of Uberlândia\n PhD student in Soil and Plant Nutrition by the Federal University of Viçosa"
   },
   {
     "objectID": "about/about_p.html",
     "href": "about/about_p.html",
     "title": "About",
     "section": "",
-    "text": "Olá, meu nome é Gabriel Palucci Rosa e bem-vindo ao meu blog. Busco trazer conteúdos sobre ciência, discussões sobre ciência do solo e, principalmente, reflexões/histórias sobre alguns trabalhos de campo.\n    Sou um entusiasta do sofware R, sendo que um dos motívos para criar o blog é manter o constante uso e aprender novas funções.  \n\n Formação Acadêmica\n\nGraduação em Geografia pela Universidade Federal de Uberlândia\nMestrado em Geografia pela Universidade Federal de Uberlâdia\nDoutorando em Solo e Nutrição de plantas pela Unviversidade Federal de Viçosa"
+    "text": "Olá, meu nome é Gabriel Palucci Rosa e bem-vindo ao meu blog. Busco trazer conteúdos sobre ciência, discussões sobre ciência do solo e, principalmente, reflexões/histórias sobre alguns trabalhos de campo. Um dos motívos para criar o blog é manter o constante uso do sofware R!.  \n\n\nEducation\n Graduação em Geografia pela Universidade Federal de Uberlândia\n Mestrado em Geografia pela Universidade Federal de Uberlâdia\n Doutorando em Solo e Nutrição de plantas pela Unviversidade Federal de Viçosa"
+  },
+  {
+    "objectID": "publication/arido.html",
+    "href": "publication/arido.html",
+    "title": "The Brazilian semiarid region over the past 21,000 years: Vegetation dynamics in small pulses of higher humidity",
+    "section": "",
+    "text": "Ecological Informatic"
   },
   {
     "objectID": "publication/arido.html#abstract",
@@ -47,6 +61,13 @@
     "title": "The Brazilian semiarid region over the past 21,000 years: Vegetation dynamics in small pulses of higher humidity",
     "section": "Abstract",
     "text": "Abstract\n\n    \n\n    In South America, one of the least addressed regions in paleoecological studies is the Brazilian Semiarid region, composed of vegetation from different biomes and currently marked by an arid climate. Although environmental conditions do not favor the formation of palynological sites, previous studies have indicated an expansion of savanna vegetation during the Last Glacial Maximum (LGM). However, more refined analyses with better spatial and temporal resolutions are important for a better understanding of these environments. The region\\`s past reconstructed by models is related to intense climate changes on brief time scales in the Pleistocene and Holocene. Furthermore, paleoclimatic modeling reconstructions that only reproduce atmospheric conditions do not always represent all factors for vegetation formation and dynamics through time. In this work, we aimed to use the combination of bioclimatic and edaphic predictors to build models with machine learning algorithms capable of predicting the current and last 21,000 years vegetation. Our results show that there is a significant gain in precision in the classification of vegetation formations when edaphic predictors are added. The use of subsurface horizons to generate edaphic attributes also resulted in better details of the local distribution of vegetation. The reconstruction of the past climate showed that the greatest change was promoted during the Heinrich Stadial 1 period; with the retraction of areas of open vegetation formations of the Hyperxerophilous Caatinga, areas of Arboreal Caatinga, Forested Caatinga, and Seasonal Deciduous Forest advanced. The current vegetation cover was established only in the Late Holocene, a period in which the humid conditions of the region allowed occupation by mostly dry vegetation"
+  },
+  {
+    "objectID": "publication/vocoroca.html",
+    "href": "publication/vocoroca.html",
+    "title": "Soil-environment relationship in an area degraded by gullies in the Minas Gerais state, Brazil",
+    "section": "",
+    "text": "Revista Brasileira de Geomorfologia"
   },
   {
     "objectID": "publication/vocoroca.html#abstract",

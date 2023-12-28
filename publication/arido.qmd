@@ -20,10 +20,12 @@ author:
   - name: Elpídio Inácio Fernando-Filho
   - name: Hugo Galvão Cândido 
   - name: Fábio Soares de Oliveria
-  - name: Gabriel Palucci Rosa
+  - name: <b>Gabriel Palucci Rosa</b>
   - name: Hermann Behling
   - name: Carlos Ernesto Gonçalves Renaud Schaefer
 ---
+
+Ecological Informatic 
 
 ```{=html}
 <head>
@@ -49,6 +51,7 @@ author:
 
 </body>
 ```
+
 ## Abstract
 
 ```{=html}
