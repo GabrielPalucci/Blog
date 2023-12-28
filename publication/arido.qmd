@@ -25,7 +25,7 @@ author:
   - name: Carlos Ernesto Gonçalves Renaud Schaefer
 ---
 
-Ecological Informatic 
+Ecological Informatic
 
 ```{=html}
 <head>
@@ -51,7 +51,6 @@ Ecological Informatic
 
 </body>
 ```
-
 ## Abstract
 
 ```{=html}
