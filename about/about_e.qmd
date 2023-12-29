@@ -1,5 +1,5 @@
 ---
-title: <p style="text-align: font-family: 'Garamond', sans-serif;"> <b> About </b> </p>
+title: "About"
 image: image.png
 about:
   template: trestles
