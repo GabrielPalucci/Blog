@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: <p style="text-align: font-family: 'Garamond', sans-serif;"> <b> About </b> </p>
 image: image.png
 about:
   template: trestles
@@ -14,7 +14,6 @@ comments: false
 ---
 
 ```{=html}
-
     <style>
         body {
             text-align: justify; }
@@ -26,8 +25,9 @@ comments: false
 
 ------------------------------------------------------------------------
 
-### Education
-
+```{=html}
+<p style="text-align: center; font-size: 30px; font-family: 'Garamond', sans-serif;"> <b> Education </b> </p>
+```
 {{< fa graduation-cap >}} Degree in <mark>Geography</mark> from the Federal University of Uberlândia
 
 {{< fa graduation-cap >}} Master degree <mark>Geography</mark> from the Federal University of Uberlândia

@@ -26,7 +26,10 @@ comments: false
 
 ------------------------------------------------------------------------
 
-### Education
+```{=html}
+<p style="text-align: center; font-size: 30px; font-family: 'Garamond', sans-serif;"> <b> Formação Académica </b> </p>
+
+```
 
 {{< fa graduation-cap >}} Graduação em <mark>Geografia</mark> pela Universidade Federal de Uberlândia
 
