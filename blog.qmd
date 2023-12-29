@@ -13,16 +13,22 @@ comments: false
 ---
 
 ```{=html}
-<p style="font-size:35px; text-align: center "> <b>This is the way</b></p>
+<p style="font-size:35px; text-align: center; font-family: 'Garamond', sans-serif; "><b>This is the way</b></p>
 
-  <style>
-        body {
-            text-align: justify; center}
-    </style>
+
+
+<style>
+    body {
+        text-align: justify;
+        font-family: 'Helvetica', sans-serif;
+    }
+</style>
+
 <body>
 
-<p>Olá, nesse espaço pretendo realizar algumas postagens sobre diferentes temáticas, utilizando algumas análises estátísticas ou representações gráficos para auxiliar na discussões dos assuntos </p>
-<body>
+    <p>Olá, nesse espaço pretendo realizar algumas postagens sobre diferentes temáticas, utilizando algumas análises estátísticas e/ou representações gráficos para auxiliar na discussão dos assuntos </p>
+
+</body>
 ```
 
 ------------------------------------------------------------------------

@@ -12,7 +12,7 @@ website:
       - icon: envelope
         href: gabrielpalucciufu@gmail.com
   navbar:
-    logo: "solo.png"
+    logo: "planta.png"
     right:
       - text: ABOUT
         menu:

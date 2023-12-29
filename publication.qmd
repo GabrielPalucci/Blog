@@ -15,17 +15,13 @@ comments: false
 ---
 
 ```{=html}
+<p style="text-align: center; font-size: 60px; font-family: 'Garamond', sans-serif;"> 
+<b>Publication</b> 
 
-<p style="text-align: center; font-size: 40px;">
 
-<b>Publication</b>
 
-</p>
-
-<p style="text-align: center; font-size: 20px;">
-
+<p style="text-align: center; font-size: 30px; font-family: 'Garamond', sans-serif;">
 This is my bookcase for research publication
-
 </p>
 ```
 

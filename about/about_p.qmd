@@ -17,7 +17,7 @@ comments: false
 
     <style>
         body {
-            text-align: justify; }
+            text-align: justify;}
     </style>
 <body>
     <p><b> Olá, meu nome é Gabriel Palucci Rosa e <b>bem-vindo</b> ao meu blog.</b> Busco trazer conteúdos sobre ciência, discussões sobre ciência do solo e, principalmente, reflexões/histórias sobre alguns trabalhos de campo. Um dos motívos para criar o blog é manter o constante uso do sofware R!.  </p>
