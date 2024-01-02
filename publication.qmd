@@ -4,7 +4,7 @@ format:
     grid:
       sidebar-width: 0px
       margin-width: 0px
-      body-width:	1100px
+      body-width:	1000px
 page-layout: full
 listing:
   contents: publication
@@ -16,12 +16,12 @@ comments: false
 ---
 
 ```{=html}
-<p style="text-align: center; font-size: 65px; font-family: 'Garamond', sans-serif;"> 
+<p style="text-align: center; font-size: 60px; font-family: 'Garamond', sans-serif;"> 
 Publication
 
 
 
-<p style="text-align: center; font-size: 30px; font-family: 'Garamond', sans-serif;">
+<p style="text-align: center; font-size: 25px; font-family: 'Garamond', sans-serif;">
 This is my bookcase of research publication
 </p>
 ```

@@ -2,6 +2,7 @@
 grid:
     sidebar-width: 0px
     margin-width: 0px
+    body-width:	1000px
 listing:
   contents: posts
   sort: "date desc"
@@ -13,9 +14,9 @@ comments: false
 ---
 
 ```{=html}
-<p style="text-align: center; font-size: 65px; font-family: 'Garamond', sans-serif;"> 
+<p style="text-align: center; font-size: 60px; font-family: 'Garamond', sans-serif;"> 
 Blog
-<p style="text-align: center; font-size: 30px; font-family: 'Garamond', sans-serif;"> 
+<p style="text-align: center; font-size: 25px; font-family: 'Garamond', sans-serif;"> 
 This is my white bord for discussin soil science  </p>
 ```
 
