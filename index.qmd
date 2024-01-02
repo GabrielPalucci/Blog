@@ -22,13 +22,13 @@ comments: false
     }
 
     p {
-        margin-top: 120px;
+        margin-top: 120px; font-size: 22px;
     }
 </style>
 
 <body>
-    <p> Hello, Iam doctoral studente. My studies are related soil classification, pedogenesis and relation soil-landscape. In the last year I have been studing about Anthrosol in Pantanal, theme of my dissertation. The project of this blog is share some ideas about soil science and scientific divulgation </p>
+    <p> Hello, my name is Gabriel Palucci Rosa and welcome to my blog. My field of studies are related to soil classification, pedogenesis and relation soil-landscape. In the last year I've been studing about Anthrosol in Pantanal, which is the theme of my dissertation. The propose of this blog is share some ideas about soil science and scientific divulgation. </p>
 </body>
 
-<a href = "https://gabrielpalucci.github.io/Blog/about/about_e.html"style = "color: #d2a88f; font-size: 23px; ; font-family: 'Garamond', sans-serif; color: #9e4826"> <b> You can learn about me ->  </b> </a>
+<a href = "https://gabrielpalucci.github.io/Blog/about/about_e.html"style = "color: #d2a88f; font-size: 26px; ; font-family: 'Garamond', sans-serif; color: #9e4826"> <b> >> You can learn about me <<   </b> </a>
 ```

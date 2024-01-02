@@ -16,7 +16,12 @@ comments: false
 ```{=html}
     <style>
         body {
-            text-align: justify; }
+            text-align: justify;
+          
+        }
+         p {
+            font-size: 18px;
+    }
     </style>
 <body>
     <p><b>Hello, my name is Gabriel Palucci Rosa and <b> welcome </b> to my blog.</b> I seek to bring <a href = "https://gabrielpalucci.github.io/Blog/blog.html"style = "color: #d2a88f;">  <b> content about soil</b> </a> and discussion about soil science. Learn more about my research interests in <a href = "https://gabrielpalucci.github.io/Blog/publication.html"style = "color: #d2a88f;">  <b>publication</b> </a>.
@@ -26,7 +31,7 @@ comments: false
 ------------------------------------------------------------------------
 
 ```{=html}
-<p style="text-align: center; font-size: 30px; font-family: 'Garamond', sans-serif;"> <b> Education </b> </p>
+<p style="text-align: center; font-size: 40px; font-family: 'Garamond', sans-serif;"> Education  </p>
 ```
 {{< fa graduation-cap >}} Degree in <mark>Geography</mark> from the Federal University of Uberlândia
 
