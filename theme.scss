@@ -83,8 +83,9 @@ div.quarto-post .thumbnail {
 }
 
 mark, .mark {
-    padding: 0.2em;
+    padding: 0.1em;
     background-color: #d2a88f;
+    opacity: 0.4;
 }
 
 .sidebar nav[role=doc-toc] ul>li>a.active, .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
