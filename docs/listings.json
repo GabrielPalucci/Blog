@@ -1,0 +1,17 @@
+[
+  {
+    "listing": "/publication.html",
+    "items": [
+      "/publication/pantanal.html",
+      "/publication/vocoroca.html",
+      "/publication/arido.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/Amostragem/Amostragem.html",
+      "/posts/Tidyverse/tidyverse.html"
+    ]
+  }
+]
