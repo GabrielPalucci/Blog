@@ -4,6 +4,7 @@ format:
     grid:
       sidebar-width: 0px
       margin-width: 0px
+      body-width:	1100px
 page-layout: full
 listing:
   contents: publication
@@ -21,7 +22,7 @@ Publication
 
 
 <p style="text-align: center; font-size: 30px; font-family: 'Garamond', sans-serif;">
-This is my bookcase for research publication
+This is my bookcase of research publication
 </p>
 ```
 

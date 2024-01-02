@@ -14,13 +14,12 @@ comments: false
 ---
 
 ```{=html}
-
     <style>
         body {
-            text-align: justify;}
+            text-align: justify; }
     </style>
 <body>
-    <p><b> Olá, meu nome é Gabriel Palucci Rosa e <b>bem-vindo</b> ao meu blog.</b> Busco trazer conteúdos sobre ciência, discussões sobre ciência do solo e, principalmente, reflexões/histórias sobre alguns trabalhos de campo. Um dos motívos para criar o blog é manter o constante uso do sofware R!.  </p>
+    <p><b>Olá, meu nome é Gabriel Palucci Rosa e <b> bem vindo </b> ao meu blog.</b> Eu procuro trazer <a href = "https://gabrielpalucci.github.io/Blog/blog.html"style = "color: #d2a88f;">  <b> conteúdo e discussões </b> </a> sobre a ciência do solo. Saiba mais sobre os meus interreses de pesquisa em <a href = "https://gabrielpalucci.github.io/Blog/publication.html"style = "color: #d2a88f;">  <b>publicações</b></a>.
 </body>
 ```
 
@@ -28,9 +27,7 @@ comments: false
 
 ```{=html}
 <p style="text-align: center; font-size: 30px; font-family: 'Garamond', sans-serif;"> <b> Formação Académica </b> </p>
-
 ```
-
 {{< fa graduation-cap >}} Graduação em <mark>Geografia</mark> pela Universidade Federal de Uberlândia
 
 {{< fa graduation-cap >}} Mestrado em <mark>Geografia</mark> pela Universidade Federal de Uberlâdia
