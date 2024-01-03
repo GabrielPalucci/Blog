@@ -24,7 +24,7 @@ comments: false
     }
     </style>
 <body
-    <p>Olá, meu nome é Gabriel Palucci Rosa e bem vindo ao meu blog. Eu procuro trazer <a href = "https://gabrielpalucci.github.io/Blog/blog.html"style = "color: #d2a88f;">  <b> conteúdo e discussões </b> </a> sobre a ciência do solo. Saiba mais sobre os meus interreses de pesquisa em <a href = "https://gabrielpalucci.github.io/Blog/publication.html"style = "color: #d2a88f;">  <b>publicações</b></a>.
+    <p>Oláa e bem vindo ao meu blog. Eu procuro trazer <a href = "https://gabrielpalucci.github.io/Blog/blog.html"style = "color: #d2a88f;">  <b> conteúdo e discussões </b> </a> sobre a ciência do solo. Saiba mais sobre os meus interreses de pesquisa em <a href = "https://gabrielpalucci.github.io/Blog/publication.html"style = "color: #d2a88f;">  <b>publicações</b></a>.
 </body>
 ```
 

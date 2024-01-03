@@ -24,7 +24,7 @@ comments: false
     }
     </style>
 <body
-    <p>Hello, my name is Gabriel Palucci Rosa and  welcome to my blog. I seek to bring <a href = "https://gabrielpalucci.github.io/Blog/blog.html"style = "color: #d2a88f;">  <b> content about soil</b> </a> and discussion about soil science. Learn more about my research interests in <a href = "https://gabrielpalucci.github.io/Blog/publication.html"style = "color: #d2a88f;">  <b>publication</b> </a>.
+    <p>Hello and welcome to my blog. I seek to bring <a href = "https://gabrielpalucci.github.io/Blog/blog.html"style = "color: #d2a88f;">  <b> content about soil</b> </a> and discussion about soil science. Learn more about my research interests in <a href = "https://gabrielpalucci.github.io/Blog/publication.html"style = "color: #d2a88f;">  <b>publication</b> </a>.
 </body>
 ```
 
