@@ -41,7 +41,7 @@ Neste post, apresento um guia **didático e progressivo** sobre a manipulação 
 
 ```{r}
 library(pacman)
-p_load(tidyverse, magrittr, palmerpenguins, ggthemes)
+p_load(tidyverse, magrittr, palmerpenguins, ggthemes, plotly)
 ```
 
 ```{r}
@@ -168,7 +168,7 @@ pinguim %>%
 ## Visualização dos dados
 
 ```{r}
-ggplot(data = na.omit(pinguim), aes(x = Tamanho_Bico_mm, y = Espessura_Bico_mm)) +
+plot_penguins<- ggplot(data = na.omit(pinguim), aes(x = Tamanho_Bico_mm, y = Espessura_Bico_mm)) +
   geom_point(aes(color = Especies, size = Peso_g), alpha = 0.7) +
   facet_wrap(~Sexo) +
   labs(
@@ -177,8 +177,10 @@ ggplot(data = na.omit(pinguim), aes(x = Tamanho_Bico_mm, y = Espessura_Bico_mm))
     color = "Espécie", 
     size = "Peso (g)"
   ) +
-  theme_light() +
-  theme_wsj()
+  theme_light()
+
+
+ggplotly(p = plot_penguins)
 ```
 
 ------------------------------------------------------------------------
