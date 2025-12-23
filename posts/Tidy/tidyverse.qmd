@@ -13,189 +13,179 @@ categories:
   - ggplot2
 ---
 
-# Introduction
+# Introdução
 
-Quando analisamos base de dados que contêm diversas colunas e linhas, se faz necessário saber comando no qual irá facilitar o "manejo" dos nossos dados. Podendo assim selecionar apenas algumas variávies ou alguns linhas. Alguns pessoas podem pensar usar outros sofwares do SQL no qual sua função está ligado diretamente a manipulação dos dados. Entretanto, é interessante utilizarmos o R! pois irá facilitar posteriormente a analisar os dados, não precisando importar e exportar base de dados de um sofware para outro
+Ao analisarmos bases de dados com muitas colunas e linhas, torna-se essencial dominar ferramentas que facilitem o **manejo**, a **organização** e a **transformação** dos dados. Operações como selecionar variáveis específicas, filtrar observações ou criar novas colunas fazem parte da rotina de qualquer análise.
 
-Assim, nesse post pretendo mostrar formas interressantes de realizar a manipulação de dados utilizando pacotes de funções simples. Posteriormente realizar alguns plots para visualizar melhor os dados, pra não ficarmos apenas em tabelas chatas hehe.
+::: callout-note
+## Características do pacote dplyr
 
-# Installing the package
+-   **Rename:** Renomear coluna
+-   **Slice:** Selecionar linhas
+-   **Select:** Comparação sistemática de algoritmos
+-   **Filter:** Análise de diferentes propriedades do solo
+-   **Relocate:** Modificar a coluna 
+-   **Arrange:** Organizar os dados de forma sequêncial
+-   **Summarise:** Realizar métricas com os dados
+-   **pivot longer:** Manipulação dos dados
+:::
 
-Para isso iremos utilizar alguns pacote, como podemos observar abaixo.
 
-```{r, warning=FALSE}
+Algumas pessoas recorrem a softwares ou linguagens voltadas exclusivamente para bancos de dados (como SQL). No entanto, o **R** se destaca por permitir que toda a etapa de manipulação esteja integrada à análise estatística e à visualização de dados.
 
+Neste post, apresento um guia **didático e progressivo** sobre a manipulação de dados com o pacote **dplyr**, parte do ecossistema **tidyverse**.
+
+------------------------------------------------------------------------
+
+## Instalação e carregamento dos pacotes
+
+```{r}
 library(pacman)
-
-p_load("tidyverse", "magrittr", "palmerpenguins", "ggplot2")
-
-library(tidyverse)
-library(magrittr)
-library(palmerpenguins)
-library(ggthemes)
-
+p_load(tidyverse, magrittr, palmerpenguins, ggthemes)
 ```
-
-A base de dados será do palmerpenguins, que apresenta a descrição de dados de três espécies de pinguins em diferentes ilhas. A base de dados vem sendo utilizada para substituir a base iris.
 
 ```{r}
 pinguim <- dplyr::as_tibble(palmerpenguins::penguins)
 ```
 
-# Using Dplyr
+------------------------------------------------------------------------
 
-## Rename
-
-Uns dos primeiros argumentos que iremos utilizar é o *rename* que possibilita modificar o nome das nossas colunas. Como podemos observar no dados abaixos que traduzimos todas as colunas para português.
+## Renomeando colunas com `rename()`
 
 ```{r}
-
 pinguim <- pinguim %>% 
-           rename(Especies = species, 
-                  Ilha = island,
-                  Tamanho_Bico_mm = bill_length_mm,
-                  Espessura_Bico_mm= bill_depth_mm,
-                  Nadadeira_mm = flipper_length_mm,
-                  Peso_g = body_mass_g,
-                  Sexo = sex,
-                  Ano = year)
+  rename(
+    Especies = species, 
+    Ilha = island,
+    Tamanho_Bico_mm = bill_length_mm,
+    Espessura_Bico_mm = bill_depth_mm,
+    Nadadeira_mm = flipper_length_mm,
+    Peso_g = body_mass_g,
+    Sexo = sex,
+    Ano = year
+  )
 ```
 
-## Slice
+------------------------------------------------------------------------
 
-O slice possibilita realizar um corte dos dados, selecionando apenas um fração das linhas. No exemplo selecionamos apenas as primeiras 10 linhas do dados
-
-```{r, warning=FALSE}
-
-pinguim %>% 
-        slice(1:20) %>% rmarkdown::paged_table(pinguim)
-```
-
-## Select
-
-```{r paged.print=FALSE}
-
-pinguim %>% 
-            dplyr::select(Especies, Ilha, Peso_g) %>%
-            rmarkdown::paged_table()
-
-```
-
-## Mutate
+## Selecionando linhas com `slice()`
 
 ```{r}
-
-
 pinguim %>% 
-      dplyr::mutate(Tam.Esp = Tamanho_Bico_mm/Espessura_Bico_mm) %>%
-      dplyr::select(Especies, Ilha, Tam.Esp) %>%
-      rmarkdown::paged_table()
-
+  slice(1:20)
 ```
 
-## Filter
+------------------------------------------------------------------------
 
-FUNCIONA???
-
-Como o nome ja diz, o **Filter** tem como princípio a filtragemn do nosso base de dados com a utilização de paramétros como:
-
-== Igual\
-\> Maior\
-\< Menor\
-\>= Maior e igual\
-\<= Menor e Igual\
-!= Diferente\
-%in% Se está dentro\
-is.na Sem valores
-
-Podemos adicionar condições como **,** para **e** e **\|** para **ou**.
+## Selecionando colunas com `select()`
 
 ```{r}
-
-
-pinguim %>% filter(Peso_g > 1000, Espessura_Bico_mm > 10) %>% 
-             rmarkdown::paged_table()                 
-
+pinguim %>% 
+  select(Especies, Ilha, Peso_g)
 ```
 
-## Relocate()
+------------------------------------------------------------------------
 
-Utilizamos para relocar as **colunas** de posição em nossa base de dados
+## Criando variáveis com `mutate()`
 
 ```{r}
-  
-
 pinguim %>% 
-      relocate(Ilha, Sexo, Especies) %>%
-      rmarkdown::paged_table()                 
-
-
-
+  mutate(Relacao_Bico = Tamanho_Bico_mm / Espessura_Bico_mm) %>%
+  select(Especies, Ilha, Relacao_Bico)
 ```
 
-## Arrange()
+------------------------------------------------------------------------
 
-Organizar a nossa base de dados
+## Filtrando dados com `filter()`
 
 ```{r}
-
 pinguim %>% 
-      select(Especies, Ilha, Peso_g) %>% 
-      arrange(desc(Peso_g)) %>%
-      rmarkdown::paged_table()                 
+  filter(Peso_g > 1000, Espessura_Bico_mm > 10)
 ```
 
-## Group_by() / Summarise()
+------------------------------------------------------------------------
 
-```{r, warning=FALSE}
-
-pinguim %>% group_by(Ilha, Especies) %>%
-            summarise(PesoMaximo = max(Peso_g), Media_Nadadeira = mean(Nadadeira_mm)) %>%
-            rmarkdown::paged_table()                 
-
-            
-  
-
-```
-
-# Juntando diferentes funções
-
-Algumas perguntas podem nos ocorrer ao realizarmos a manipulação dos dados, um exemplo é
-
--   Dos 10 penguins mais gordinhos, algum que está localizado na ilha Biscoe e qual especie é?
-
-Para realizar esssa pegunta podemos realizar uma seleção das nossas colunas para facilitar a observação da tabela, posteriormente organizar os dados em decressente em relação ao peso dos penguins e por fim selecionar as primemiras 10 linhas dos dados.
+## Reorganizando colunas com `relocate()`
 
 ```{r}
-
 pinguim %>% 
-            select(Especies, Ilha, Peso_g) %>% 
-            arrange(desc(Peso_g)) %>% 
-            slice(1:10) %>% 
-            rmarkdown::paged_table()
-
+  relocate(Ilha, Sexo, Especies)
 ```
 
-Como podemos ver os penguins mais gordos são da espécie gentoo e localizam na ilha Biscoe. No próximo post iremos utilizar base de dados de solos para realizar alguns plots utilizando o ggplot. Aqui irei deixar apenas um plot demostrando algumas relações entre dos dados palmerpinguins
+------------------------------------------------------------------------
 
-# Plot
+## Ordenando dados com `arrange()`
 
-```{r, warning=FALSE}
-
-ggplot(data = na.omit(pinguim), aes(x= Tamanho_Bico_mm, y = Espessura_Bico_mm)) +
-                geom_point(aes(color = Especies, size = Peso_g )) +
-                labs(x = "Tamanho_Bico_mm", 
-                      y = "Espessura_Bico_mm",
-                     color = "Especíes", size = "Peso" )+
-                facet_wrap(~Sexo) +
-                theme_light()+
-                theme_wsj()
+```{r}
+pinguim %>% 
+  select(Especies, Ilha, Peso_g) %>% 
+  arrange(desc(Peso_g))
 ```
 
-No caso, podemos observar que os pinguins machos tendem apresentar valores superiores em todas as métricas analisadas, como tamanho do bico, espessura e peso.
+------------------------------------------------------------------------
 
-# Referência
+## Agregando dados com `group_by()` e `summarise()`
 
-[ ](https://github.com/allisonhorst/palmerpenguins)
+```{r}
+pinguim %>% 
+  group_by(Ilha, Especies) %>%
+  summarise(
+    Peso_Maximo = max(Peso_g, na.rm = TRUE),
+    Media_Nadadeira = mean(Nadadeira_mm, na.rm = TRUE),
+    .groups = "drop"
+  )
+```
+
+------------------------------------------------------------------------
+
+## Reestruturando dados com `pivot_longer()`
+
+```{r}
+pinguim_long <- pinguim %>% 
+  select(Especies, Sexo, Tamanho_Bico_mm, Espessura_Bico_mm, Nadadeira_mm) %>%
+  pivot_longer(
+    cols = c(Tamanho_Bico_mm, Espessura_Bico_mm, Nadadeira_mm),
+    names_to = "Variavel",
+    values_to = "Valor"
+  )
+
+pinguim_long
+```
+
+------------------------------------------------------------------------
+
+## Exemplo integrado
+
+```{r}
+pinguim %>% 
+  select(Especies, Ilha, Peso_g) %>% 
+  arrange(desc(Peso_g)) %>% 
+  slice(1:10)
+```
+
+------------------------------------------------------------------------
+
+## Visualização dos dados
+
+```{r}
+ggplot(data = na.omit(pinguim), aes(x = Tamanho_Bico_mm, y = Espessura_Bico_mm)) +
+  geom_point(aes(color = Especies, size = Peso_g), alpha = 0.7) +
+  facet_wrap(~Sexo) +
+  labs(
+    x = "Tamanho do bico (mm)", 
+    y = "Espessura do bico (mm)",
+    color = "Espécie", 
+    size = "Peso (g)"
+  ) +
+  theme_light() +
+  theme_wsj()
+```
+
+------------------------------------------------------------------------
+
+## Referências
+
+-   Wickham et al. (2019). *Welcome to the tidyverse*. JOSS.
+-   Horst et al. (2020). *palmerpenguins*.
 
 ![](https://www.tidyverse.org/images/hex-tidyverse.png){width="15%"} ![](https://magrittr.tidyverse.org/logo.png){width="15%"} ![](https://allisonhorst.github.io/palmerpenguins/reference/figures/logo.png){width="15%"}
