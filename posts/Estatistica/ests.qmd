@@ -1,0 +1,204 @@
+---
+image: ppa.png
+page-layout: article
+title-block-banner: pp.png
+date: "2023-12-22"
+title: "Estatística | palmerpenguins"
+author: "Gabriel Palucci Rosa"
+toc: true
+toc-title: "Table of Content"
+categories:
+  - Penguins
+  - Dplyr
+  - ggplot2
+---
+
+# Introdução
+
+Ao analisarmos bases de dados com muitas colunas e linhas, torna-se essencial dominar ferramentas que facilitem o **manejo**, a **organização** e a **transformação** dos dados. Operações como selecionar variáveis específicas, filtrar observações ou criar novas colunas fazem parte da rotina de qualquer análise.
+
+::: callout-note
+## Características do pacote dplyr
+
+-   **ANOVA:** Renomear coluna
+-   **TESTE T:** Selecionar linhas
+-   **Select:** Comparação sistemática de algoritmos
+-   **Filter:** Análise de diferentes propriedades do solo
+-   **Relocate:** Modificar a coluna
+-   **Arrange:** Organizar os dados de forma sequêncial
+-   **Summarise:** Realizar métricas com os dados
+-   **pivot longer:** Manipulação dos dados
+:::
+
+# ANOVA
+
+Quando buscamos analisar 2 ou mais grupos, ou tratamentos, utilizamos outras ferramentas estatísticas, Anova.
+
+A análise de variávencia dos dados que utiliza-se da média dos grupos buscando verificar se existe diferença entre eles. Assim como o test t, utilizaremos dos princípios do h1 e h0
+
+Nosso h0 demontra não existe diferença entre os grupos Nosso h1 significa que tem diferença entre os grupos.
+
+Assim, utilizando valor de 0.95 de confiabilidade, o valor de p \< 0.05 irá ser refutada.
+
+Objetivo do nosso script será
+
+Existe diferença estatística entre especies de penguin a partir do peso? Lembrando que nossa base de dados apresentam 3 especíes, Gentoo, Adelia e Chinstrap
+
+Dessa forma nossa hipótese são:
+
+Ho - O peso não promve diferença entre os três tipos de espécies H1 - O peso promve diferença entre os três tipos de espécies
+
+Importante lembrar que o peso é uma variável dependete pacotes
+
+------------------------------------------------------------------------
+
+## Instalação e carregamento dos pacotes
+
+```{r}
+library(pacman)
+p_load(tidyverse,
+       magrittr,
+       palmerpenguins,
+       ggthemes, 
+       plotly,
+       RVAideMemoire,
+       car,
+       rstatix,
+       ggstatsplot
+       )
+```
+
+```{r}
+penguins <- dplyr::as_tibble(palmerpenguins::penguins)
+```
+
+------------------------------------------------------------------------
+
+## Organizando dados utilizando dplyr
+
+```{r}
+pinguim <- penguins %>% 
+  rename(
+    Especies = species, 
+    Ilha = island,
+    Tamanho_Bico_mm = bill_length_mm,
+    Espessura_Bico_mm = bill_depth_mm,
+    Nadadeira_mm = flipper_length_mm,
+    Peso_g = body_mass_g,
+    Sexo = sex,
+    Ano = year) %>%
+  mutate(Relacao_Bico = Tamanho_Bico_mm / Espessura_Bico_mm) %>%
+  mutate(Sexo = ifelse(Sexo == "female", "feminino", "masculino")) %>% 
+  mutate(Especies = as.factor(Especies)) %>% 
+  na.omit()
+
+```
+
+#Presupostos para análise
+
+## Verificando normalidade
+
+```{r}
+
+byf.shapiro(Tamanho_Bico_mm ~ Especies, data  = pinguim)
+
+```
+
+##Presuposto de levene
+
+Observar a homogeneidade das variâncias, pressupomos que as variâncias das diferentes amostras ou grupos de dados devem ser semelhantes entre si.
+
+```{r}
+
+leveneTest(Tamanho_Bico_mm ~ Especies, 
+           data  = pinguim,
+           center = mean )
+
+```
+
+##Verificando outliers
+
+```{r}
+
+pinguim %>% 
+  select(Especies,Tamanho_Bico_mm) %>% 
+  group_by(Especies) %>% 
+  identify_outliers(Tamanho_Bico_mm)
+
+```
+
+```{r, warning= FALSE}
+
+ggplot(pinguim, aes(x = Especies, y = Tamanho_Bico_mm, fill = Especies))+
+  geom_boxplot()+
+  theme_bw() +
+  theme(legend.position = "bottom")+
+  labs(y= "Tamanho Bico (mm)")
+
+```
+
+# 
+
+```{r}
+
+aov_penguins<-aov(body_mass ~ species, data = p)
+
+```
+
+anova()
+
+pwr::pwr.anova.test(aov_penguins) effectsize::eta_squared(model = aov_penguins)
+
+penguins\$species
+
+library(ggstatsplot)
+
+PlantGrowth$group <- factor(PlantGrowth$group, labels = c("Controle", "Tratamento", "Tratamento 2"))
+
+pwr PlantGrowth_aov\<- aov(weight \~ group, data = PlantGrowth)
+
+library(ggstatsplot)
+
+p \<- penguins %\>% na.omit() names(p)
+
+shapiro.test(residuals(aov_penguins)) qqnorm(residuals(aov_penguins)) qqline(residuals(aov_penguins))
+
+car::leveneTest(body_mass \~ species, data = p)
+
+summary(aov_penguins)
+
+TukeyHSD() anova()
+
+anova()
+
+##Anova Welch uma via
+
+No caso a
+
+```{r}
+
+pinguim %>% select(Especies,Tamanho_Bico_mm) %>% 
+welch_anova_test(  Tamanho_Bico_mm ~ Especies )
+```
+
+```{r}
+
+ggbetweenstats(
+  x = Especies,
+  y = Tamanho_Bico_mm,
+  data = pinguim,
+  centrality.point.args = list(size = 3, color = "darkred"),
+    results.subtitle = TRUE
+  )
+```
+
+Algumas pessoas recorrem a softwares ou linguagens voltadas exclusivamente para bancos de dados (como SQL). No entanto, o **R** se destaca por permitir que toda a etapa de manipulação esteja integrada à análise estatística e à visualização de dados.
+
+Neste post, apresento um guia **didático e progressivo** sobre a manipulação de dados com o pacote **dplyr**, parte do ecossistema **tidyverse**.
+
+## Referências
+
+-   Wickham et al. (2019). *Welcome to the tidyverse*. JOSS.
+-   Horst et al. (2020). *palmerpenguins*.
+
+![](https://www.tidyverse.org/images/hex-tidyverse.png){width="15%"} ![](https://magrittr.tidyverse.org/logo.png){width="15%"} ![](https://allisonhorst.github.io/palmerpenguins/reference/figures/logo.png){width="15%"}

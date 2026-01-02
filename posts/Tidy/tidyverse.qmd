@@ -91,6 +91,7 @@ pinguim %>%
 ```{r}
 pinguim %>% 
   mutate(Relacao_Bico = Tamanho_Bico_mm / Espessura_Bico_mm) %>%
+  mutate(Sexo = ifelse(Sexo == "female", "feminino", "masculino")) %>% 
   select(Especies, Ilha, Relacao_Bico)
 ```
 
