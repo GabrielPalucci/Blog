@@ -39,6 +39,13 @@ Performa em um data nunca visto
 
 ```{r}
 
+pacman::p_load(tidymodels)
+```
+
+
+
+```{r}
+
 
 pinguins <- palmerpenguins::penguins
 pinguins <- pinguins %>%

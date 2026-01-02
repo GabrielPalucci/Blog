@@ -133,5 +133,8 @@
   },
   "publication/MataSeca.qmd": {
     "MataSeca.html": "32316a56"
+  },
+  "posts/Tidymodels/tidymodels.qmd": {
+    "tidymodels.html": "f9abf95d"
   }
 }

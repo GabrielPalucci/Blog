@@ -1,0 +1,10 @@
+[
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/Estatistica/ests.html",
+      "/posts/Tidy/tidyverse.html",
+      "/posts/Tidymodels/tidymodels.html"
+    ]
+  }
+]
