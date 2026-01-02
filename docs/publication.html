@@ -78,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -133,7 +133,7 @@ window.Quarto = {
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -166,11 +166,11 @@ window.Quarto = {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./publication.html"> 
+    <a class="nav-link active" href="./publication.html" aria-current="page"> 
 <span class="menu-text">PUBLICATIONS</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="./blog.html"> 
 <span class="menu-text">BLOG</span></a>
   </li>  
   <li class="nav-item compact">
@@ -186,101 +186,206 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Dplyr">Dplyr <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Penguins">Penguins <span class="quarto-category-count">(2)</span></div><div class="category" data-category="ggplot2">ggplot2 <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Brazilian savanna">Brazilian savanna <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Brazilian semiarid region">Brazilian semiarid region <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Community composition">Community composition <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ecosystem restoration">Ecosystem restoration <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Environmental stratification">Environmental stratification <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Geoenvironmental gradient">Geoenvironmental gradient <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Holocene">Holocene <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Paleoclimatic modeling">Paleoclimatic modeling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Pedological variables">Pedological variables <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Pleistocene">Pleistocene <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Serra da Tenda">Serra da Tenda <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Soil erosion">Soil erosion <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Soil-environment">Soil-environment <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Soil-vegetation relationship">Soil-vegetation relationship <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Soils">Soils <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Vegetation formations">Vegetation formations <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Wetlands">Wetlands <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 
 
 
 <p style="text-align: center; font-size: 60px; font-family: 'Garamond', sans-serif;"> 
-Blog
-</p><p style="text-align: center; font-size: 25px; font-family: 'Garamond', sans-serif;"> 
-This is my white bord for discussin soil science  </p>
+Publication
+
+
+
+</p><p style="text-align: center; font-size: 25px; font-family: 'Garamond', sans-serif;">
+This is my bookcase of research publication
+</p>
 <hr>
-<p style="font-size:25px; text-align: center; font-family: 'Garamond', sans-serif;">
-  Recent posts / Posts recentes
-</p>
 
 
 
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Penguins,Dplyr,ggplot2" data-listing-date-sort="1703214000000" data-listing-file-modified-sort="1766523324696" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="502">
-<a href="./posts/Tidy/tidyverse.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/Tidy/ppa.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Utilizando Dplyr e ggplot2 | palmerpenguins
-</h5>
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Community composition,Geoenvironmental gradient,Serra da Tenda,Soil-vegetation relationship" data-listing-date-sort="1719370800000" data-listing-file-modified-sort="1766511778025" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363">
+<div class="thumbnail">
+<p><a href="./publication/MataSeca.html" class="no-external"></a></p><a href="./publication/MataSeca.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./publication/MataSeca.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publication/MataSeca.html" class="no-external">Edaphic gradient shapes the structure and composition of vegetation in the forest-cerrado ecotone in north of minas gerais, Brazil</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publication/MataSeca.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Penguins'); return false;">
-Penguins
+<div class="listing-category" onclick="window.quartoListingCategory('Community composition'); return false;">
+Community composition
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('Dplyr'); return false;">
-Dplyr
+<div class="listing-category" onclick="window.quartoListingCategory('Geoenvironmental gradient'); return false;">
+Geoenvironmental gradient
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('ggplot2'); return false;">
-ggplot2
+<div class="listing-category" onclick="window.quartoListingCategory('Serra da Tenda'); return false;">
+Serra da Tenda
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Soil-vegetation relationship'); return false;">
+Soil-vegetation relationship
 </div>
 </div>
-<div class="card-text listing-description">
-Ao analisarmos bases de dados com muitas colunas e linhas, torna-se essencial dominar ferramentas que facilitem o <strong>manejo</strong>, a <strong>organização</strong> e a <strong>transformação</strong> dos dados.…
+<div class="listing-description">
+<a href="./publication/MataSeca.html" class="no-external">Brazilian Journal of Botany</a>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Gabriel Palucci Rosa
 </div>
+<div class="metadata">
+<a href="./publication/MataSeca.html" class="no-external">
 <div class="listing-date">
-Dec 22, 2023
+Jun 26, 2024
 </div>
-</div>
-</div>
+<div class="listing-author">
+Aline Parreira de Souza, Guilherme Resende Corrêa, Daniel Meira Arruda, Rúbia Santos Fonseca, Hugo Galvão Cândido, <b>Gabriel Palucci Rosa</b>, Viviane Arantes Koch, Ana Paula Dechen Rodrigues, Márcio Venícius Barbosa Xavier
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Penguins,Dplyr,ggplot2" data-listing-date-sort="1703214000000" data-listing-file-modified-sort="1767314140114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="532">
-<a href="./posts/Tidymodels/tidymodels.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="posts\Tidymodels\tidymodels_files\figure-html\unnamed-chunk-9-1.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Utilizando tidymodels | palmerpenguins
-</h5>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Brazilian semiarid region,Vegetation formations,Pleistocene,Holocene,Paleoclimatic modeling,Soils" data-listing-date-sort="1699066800000" data-listing-file-modified-sort="1766511778025" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="404">
+<div class="thumbnail">
+<p><a href="./publication/arido.html" class="no-external"></a></p><a href="./publication/arido.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./publication/arido.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publication/arido.html" class="no-external">The Brazilian semiarid region over the past 21,000 years: Vegetation dynamics in small pulses of higher humidity</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publication/arido.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Penguins'); return false;">
-Penguins
+<div class="listing-category" onclick="window.quartoListingCategory('Brazilian semiarid region'); return false;">
+Brazilian semiarid region
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('Dplyr'); return false;">
-Dplyr
+<div class="listing-category" onclick="window.quartoListingCategory('Vegetation formations'); return false;">
+Vegetation formations
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('ggplot2'); return false;">
-ggplot2
+<div class="listing-category" onclick="window.quartoListingCategory('Pleistocene'); return false;">
+Pleistocene
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Holocene'); return false;">
+Holocene
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Paleoclimatic modeling'); return false;">
+Paleoclimatic modeling
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Soils'); return false;">
+Soils
 </div>
 </div>
-<div class="card-text listing-description">
-Compreender o que os dados estão nos dizendo é de suma importancia para ciencia, para isso realizamos diveros processos de investigação inicial. Após essa etapa Ao…<strong></strong>
+<div class="listing-description">
+<a href="./publication/arido.html" class="no-external">Ecological Informatic</a>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Gabriel Palucci Rosa
 </div>
+<div class="metadata">
+<a href="./publication/arido.html" class="no-external">
 <div class="listing-date">
-Dec 22, 2023
+Nov 4, 2023
 </div>
-</div>
-</div>
+<div class="listing-author">
+Rafael César Silva, Guilherme Resende Corrêa, Daniel Meira Arruda, Gustavo Vieira Veloso, Elpídio Inácio Fernando-Filho, Hugo Galvão Cândido, Fábio Soares de Oliveria, <b>Gabriel Palucci Rosa</b>, Hermann Behling, Carlos Ernesto Gonçalves Renaud Schaefer
 </div>
 </a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="Brazilian savanna,Soil erosion,Soil-environment,Ecosystem restoration" data-listing-date-sort="1694746800000" data-listing-file-modified-sort="1705407951789" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="384">
+<div class="thumbnail">
+<p><a href="./publication/vocoroca.html" class="no-external"></a></p><a href="./publication/vocoroca.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./publication/vocoroca.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publication/vocoroca.html" class="no-external">Soil-environment relationship in an area degraded by gullies in the Minas Gerais state, Brazil</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publication/vocoroca.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Brazilian savanna'); return false;">
+Brazilian savanna
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Soil erosion'); return false;">
+Soil erosion
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Soil-environment'); return false;">
+Soil-environment
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Ecosystem restoration'); return false;">
+Ecosystem restoration
+</div>
+</div>
+<div class="listing-description">
+<a href="./publication/vocoroca.html" class="no-external">Revista Brasileira de Geomorfologia</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publication/vocoroca.html" class="no-external">
+<div class="listing-date">
+Sep 15, 2023
+</div>
+<div class="listing-author">
+Guilherme Resende Corrêa, <b>Gabriel Palucci Rosa</b>, Maria Lúcia Furtado Coelho Campos, Gabriel Miranda Paranaiba Bernardes, Flávia Monize Ferreira dos Santos, Viviane Arantes Koch, Diogo Costa Nascimento
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="Environmental stratification,Pedological variables,Soil-vegetation relationship,Wetlands" data-listing-date-sort="1481853600000" data-listing-file-modified-sort="1705408111795" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="343">
+<div class="thumbnail">
+<p><a href="./publication/pantanal.html" class="no-external"></a></p><a href="./publication/pantanal.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./publication/pantanal.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publication/pantanal.html" class="no-external">Edaphic gradient and phytophysiognomies of Pantanal do Abobral, Brazil</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publication/pantanal.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Environmental stratification'); return false;">
+Environmental stratification
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Pedological variables'); return false;">
+Pedological variables
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Soil-vegetation relationship'); return false;">
+Soil-vegetation relationship
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Wetlands'); return false;">
+Wetlands
+</div>
+</div>
+<div class="listing-description">
+<a href="./publication/pantanal.html" class="no-external">Oecologia Australis</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publication/pantanal.html" class="no-external">
+<div class="listing-date">
+Dec 16, 2016
+</div>
+<div class="listing-author">
+Roberta Franco Pereira de Queiroz, Guilherme Resende Corrêa, Frederico dos Santos Gradella, <b>Gabriel Palucci Rosa</b>
+</div>
+</a>
+</div>
 </div>
 </div>
 <div class="listing-no-matching d-none">

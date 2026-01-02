@@ -1,0 +1,245 @@
+---
+page-layout: article
+date: "2023-12-22"
+title: "Utilizando tidymodels | palmerpenguins"
+author: "Gabriel Palucci Rosa"
+toc: true
+toc-title: "Table of Content"
+categories:
+  - Penguins
+  - Dplyr
+  - ggplot2
+---
+
+# Introdução
+
+Compreender o que os dados estão nos dizendo é de suma importancia para ciencia, para isso realizamos diveros processos de investigação inicial. Após essa etapa Ao analisarmos bases de dados com muitas colunas e linhas, torna-se essencial dominar ferramentas que facilitem o **manejo**,
+
+O tidymodels é composto por diversos pacotes sendo os principais
+
+rsample - Promove realizar processo random substs (Bootstrap) recipe - Contem funções de transformação de data para modelos (Feature enginnering)
+
+parsip - Pacote que cntem diversos modelos que serão utilizados Tune e dias - Fine-tuningn e melhorar o modelo
+
+yardstick package - provem metricas para entender o modelos
+
+-   Podemos ter mdelos
+
+Regressao - Modelos nmericos quatitativos classificação - categorial ( sim ou não)
+
+#Processo
+
+treino e teste
+
+Treino - feature engineering Model fiting e tunning
+
+Teste
+
+Performa em um data nunca visto
+
+```{r}
+
+pacman::p_load(tidymodels)
+```
+
+
+
+```{r}
+
+
+pinguins <- palmerpenguins::penguins
+pinguins <- pinguins %>%
+  filter(species == "Adelie") %>% 
+  na.omit()
+
+pinguin_splite<- initial_split(data = pinguins,
+              prop = 0.7,
+              strata = body_mass_g)
+
+
+pinguin_train <- pinguin_splite %>% 
+  training()
+
+pinguin_test <- pinguin_splite %>% 
+  testing()
+
+
+
+```
+
+Vamos ver modelos simples, sendo assim iremos começar com modelos de regressão, para isso iremos analisar utilizaremos o pacote yardstick() para ajustar modelos e analisar a predição.
+
+Como exemplo iremos predizir o peso em g dos pinguins em relação a tamanho do bico
+
+formula basica
+
+y = b + ax
+
+O sistema de parsnip se estrutura em 3 etapas
+
+1 - Especificar o tipo de modelo
+
+2 - Especificar a engine
+
+3 - Especificar o modo
+
+```{r}
+
+
+linear_model <- linear_reg() %>% 
+  set_engine(engine = "lm") %>% 
+  set_mode(mode = "regression")
+
+```
+
+Após criar nosso modelo, precisamos treinalo com nossos dados, sendo assim realizamos processo de fit.
+
+```{r}
+
+
+lm_fit <- linear_model %>%
+  fit(body_mass_g ~ bill_depth_mm,
+      data = pinguin_train)
+
+
+```
+
+Após criar o modelo, podemos investigar o resumo do modelo em sistema tibble.
+
+```{r}
+
+tidy(lm_fit)
+```
+
+A patir do modelo criado podemos
+
+```{r}
+
+peso_pred <- lm_fit %>% 
+  predict(new_data = pinguin_test)
+
+peso_pred
+
+```
+
+Para observar a avaliação podemos utilizar o bind_cols
+
+```{r}
+
+peso_test_results <- pinguin_test %>% 
+  select(body_mass_g,bill_depth_mm) %>% 
+  bind_cols(peso_pred)
+
+peso_test_results
+```
+
+##Evoluindo performece do modelos
+
+rmse
+
+```{r}
+
+
+peso_test_results %>% 
+  rmse(truth = body_mass_g, estimate = .pred)
+
+peso_test_results %>% 
+   rsq(truth = body_mass_g, estimate = .pred)
+
+
+```
+
+```{r}
+
+ggplot(peso_test_results, aes(x = body_mass_g,
+                              y = .pred))+
+  geom_point() +
+  geom_abline(color = "red", linetyper = 2)+
+  labs(x = "Peso (g)", y = "Predict") +
+  coord_obs_pred()+
+  theme_bw()
+
+```
+
+FINal
+
+Last fit função
+
+```{r}
+
+
+lm_last_fit <- linear_model %>% 
+  last_fit(body_mass_g ~ bill_depth_mm,
+           split = pinguin_splite)
+
+
+lm_last_fit %>% collect_metrics()
+
+
+lm_collect_predictions <- lm_last_fit %>% collect_predictions()
+```
+
+
+
+
+##PARTE 2
+
+
+
+Entendendo melhor o processo de recepe() em estrutura de feature enginnering que é o processo de dados para um formato adequado para algoritmo aprendizento de maquinas.
+
+Nesse sentido o pacote recipe() é utilizado para;
+
+- Atribuição de função  às variáveis de colunas,
+- pre-processamento de trasformação de dados
+- Treinando os novos dados transformados
+- Aplicando as modificações em uma nova base de dados.
+
+
+Desta forma nosso primeiro passo é, dentro da nossa base de dados, qual será nosso variáveil resposta e preditora, no caso como quereremos entender o peso de penguins adele, essa coluna body_mass_g, é nosso outcome. Já a nossa preditora, serie buscar variáveis que consegue explicar a variação do peso dos penguins. No nosso exemplo anterior utilizamos apenas o largura do bico, entretanto podemos colocar mais de uma variáveil preditora. Lembrando que variáveis preditoras podem ser numéricas ou categória.
+
+
+Após podemos determinar uma sequência de modificação dos nossos dados, em busca de diminuir alguns problemas como alta correlação entre os dados, remoção com baixa variabilidade, remoção de dados faltantes. entre outros. Para isso usamos comando step_
+
+
+No terceiro momento podemos realizar modificações e preparação dos dados, utilizaremos principalmente o prep()
+
+
+4- Assim as modificações que foram realizados dados para traning tem que ser os mesmo para dados de test, para isso realizamos o bake
+
+
+Correlated predictor variables provide redundant information and can negatively impact the model fitting process. When two variables are highly correlated, their values change linearly with each other and hence provide the same information to your machine learning algorithms. This phenomenon is know as multicollinearity.
+
+Before beginning the model fitting process, it's important to explore your dataset to uncover these relationships and remove them in your feature engineering steps.
+
+
+
+
+```{r}
+
+cor
+prep()
+bake(new_data = )
+step_corr(threshold = )
+```
+
+
+::: callout-note
+## Características do pacote dplyr
+
+-   **Rename:** Renomear coluna
+-   **Slice:** Selecionar linhas
+-   **Select:** Comparação sistemática de algoritmos
+-   **Filter:** Análise de diferentes propriedades do solo
+-   **Relocate:** Modificar a coluna
+-   **Arrange:** Organizar os dados de forma sequêncial
+-   **Summarise:** Realizar métricas com os dados
+-   **pivot longer:** Manipulação dos dados
+:::
+
+## Referências
+
+-   Wickham et al. (2019). *Welcome to the tidyverse*. JOSS.
+-   Horst et al. (2020). *palmerpenguins*.
+
+![](https://allisonhorst.github.io/palmerpenguins/reference/figures/logo.png){width="15%"} ![](https://www.tidyverse.org/images/hex-tidyverse.png){width="15%"} ![](https://magrittr.tidyverse.org/logo.png){width="15%"} ![](https://tidymodels.tidymodels.org/logo.png){width="15%"}

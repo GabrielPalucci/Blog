@@ -1,0 +1,144 @@
+---
+page-layout: article
+date: "2023-12-22"
+title: "Utilizando tidymodels | palmerpenguins"
+author: "Gabriel Palucci Rosa"
+toc: true
+toc-title: "Table of Content"
+categories:
+  - Penguins
+  - Dplyr
+  - ggplot2
+---
+
+
+
+```{r}
+library(tidymodels)
+
+```
+
+Utilizaremos proceso integrado com sistema workflow, nesse caso buscaremos modelos decição, O sistema de workflow promove que podemos combinar modelo realizado pelo parsnip() juntamente com o a receita feita pelo recipe(),
+
+Diferente do processo anterior, utilizando-se o sistema workflow, ele ja ajusta o modelo, realiza predições na base de treino e teste e podemos acessar facilmente utilizando-se a função collect_métrics().
+
+
+Para exemplificar o processo utilizando o sistema workflow, utilizaremos a base de dados do e, Nesse sentido, buscaremos determinar o sexo 
+
+```{r}
+
+pinguins <- palmerpenguins::penguins
+pinguins <- pinguins %>%
+  filter(species == "Gentoo") %>% 
+  na.omit()
+
+pinguin_splite<- initial_split(data = pinguins,
+              prop = 0.7,
+              strata = sex)
+
+
+pinguin_train <- pinguin_splite %>% 
+  training()
+
+pinguin_test <- pinguin_splite %>% 
+  testing()
+
+```
+
+
+
+
+
+```{r}
+
+
+sex_ping_rec <- recipe(sex ~ ., data = pinguin_train) %>% 
+  step_corr(all_numeric_predictors(), threshold = 0.9) %>% 
+  step_dummy(all_nominal(), -all_outcomes())
+
+```
+
+
+
+```{r}
+
+sex_ping_mod <- rand_forest() %>%
+  set_engine("ranger") %>% 
+  set_mode("classification")
+
+```
+
+
+
+
+```{r}
+
+sex_ping_wkfl <- workflow() %>% 
+  add_model(sex_ping_mod) %>% 
+  add_recipe(sex_ping_rec)
+
+
+```
+
+
+
+
+
+```{r}
+
+
+sex_ping_wkfl_fit <- sex_ping_wkfl %>% 
+  last_fit(split = pinguin_splite)
+
+
+sex_ping_wkfl_metric <- sex_ping_wkfl_fit %>% 
+  collect_metrics()
+
+
+sex_ping_wkfl_pred <- sex_ping_wkfl_fit %>% 
+  collect_predictions()
+
+
+
+
+```
+
+
+```{r}
+
+
+sex_ping_wkfl_pred %>% 
+  conf_mat(truth = sex, estimate = .pred_class)
+
+```
+
+```{r}
+
+sex_ping_wkfl_pred %>% 
+  sens(truth = sex, estimate = .pred_class)
+```
+
+
+
+```{r}
+
+sex_ping_wkfl_pred %>% 
+  spec(truth = sex, estimate = .pred_class)
+```
+
+
+
+```{r}
+  # Plot ROC curve
+sex_ping_wkfl_pred %>% 
+  roc_curve(truth = sex, .pred_female) %>% 
+  autoplot()
+```
+
+
+Creating workflows
+workflow objects simplify the modeling process in tidymodels. With workflows, it's possible to train a parsnip model and recipe object at the same time.
+
+
+
+

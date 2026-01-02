@@ -179,6 +179,51 @@ lm_last_fit %>% collect_metrics()
 lm_collect_predictions <- lm_last_fit %>% collect_predictions()
 ```
 
+
+
+
+##PARTE 2
+
+
+
+Entendendo melhor o processo de recepe() em estrutura de feature enginnering que é o processo de dados para um formato adequado para algoritmo aprendizento de maquinas.
+
+Nesse sentido o pacote recipe() é utilizado para;
+
+- Atribuição de função  às variáveis de colunas,
+- pre-processamento de trasformação de dados
+- Treinando os novos dados transformados
+- Aplicando as modificações em uma nova base de dados.
+
+
+Desta forma nosso primeiro passo é, dentro da nossa base de dados, qual será nosso variáveil resposta e preditora, no caso como quereremos entender o peso de penguins adele, essa coluna body_mass_g, é nosso outcome. Já a nossa preditora, serie buscar variáveis que consegue explicar a variação do peso dos penguins. No nosso exemplo anterior utilizamos apenas o largura do bico, entretanto podemos colocar mais de uma variáveil preditora. Lembrando que variáveis preditoras podem ser numéricas ou categória.
+
+
+Após podemos determinar uma sequência de modificação dos nossos dados, em busca de diminuir alguns problemas como alta correlação entre os dados, remoção com baixa variabilidade, remoção de dados faltantes. entre outros. Para isso usamos comando step_
+
+
+No terceiro momento podemos realizar modificações e preparação dos dados, utilizaremos principalmente o prep()
+
+
+4- Assim as modificações que foram realizados dados para traning tem que ser os mesmo para dados de test, para isso realizamos o bake
+
+
+Correlated predictor variables provide redundant information and can negatively impact the model fitting process. When two variables are highly correlated, their values change linearly with each other and hence provide the same information to your machine learning algorithms. This phenomenon is know as multicollinearity.
+
+Before beginning the model fitting process, it's important to explore your dataset to uncover these relationships and remove them in your feature engineering steps.
+
+
+
+
+```{r}
+
+cor
+prep()
+bake(new_data = )
+step_corr(threshold = )
+```
+
+
 ::: callout-note
 ## Características do pacote dplyr
 

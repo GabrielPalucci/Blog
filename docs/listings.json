@@ -1,8 +1,16 @@
 [
   {
+    "listing": "/publication.html",
+    "items": [
+      "/publication/MataSeca.html",
+      "/publication/arido.html",
+      "/publication/vocoroca.html",
+      "/publication/pantanal.html"
+    ]
+  },
+  {
     "listing": "/blog.html",
     "items": [
-      "/posts/Estatistica/ests.html",
       "/posts/Tidy/tidyverse.html",
       "/posts/Tidymodels/tidymodels.html"
     ]
